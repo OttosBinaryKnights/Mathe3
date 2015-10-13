@@ -1,8 +1,16 @@
 # Blatt 0
 ## 0.1 Berechnen Sie das Integral ... auf dem Dreieck ...
 \[
-\int_{1}^{2}{ (\int_{x}^{2}{e^{x+y} }dy)}dx =
+\int_{1}^{2}{ (\int_{x}^{2}{e^{x+y} }dy)}dx = 
+
+ \int_{1}^{2}{[e^{x+y}]^2_x}dx =
+ 
+ \int_{1}^{2}{(e^{x+2}-e^{2x})}dx =
+
+ [e^{x+2}-{e^{2x}\over2}]^2_1 =
+ 
 \frac{e^4}{2} - e^3 +\frac{e^2}{2}
+
 \]
 ## 0.2
 ## 0.3 Berechnen Sie das Integral ...
