@@ -1,4 +1,4 @@
-# Blatt 01
+# Blatt 01 (unkorrigiert)
 ## 1.1 12 Bauteile, davon 2 defekt. Mit welcher Wahrscheinlichkeit ist/sind unter 4 ausgewählten ...
 Alle möglichen Kombinationen:
 $$ \binom{12}{4} = 495$$
@@ -31,4 +31,29 @@ $$
 Gegenereignis zu, "wenn 0 oder 1 Diskette defekt"
 $$
 P(X) = 1 - \frac{ \binom{90}{5} + \binom{90}{4} * \binom{10}{1}}{\binom{100}{5}} \approx 7,686 \%
+$$
+
+## 1.4
+|            | Prog 1 | Prog 2 |
+| ---------- |:------:| :------:|
+| **Inf**    | 20     | 35     | *55*
+| **CV**     | 40     | 5      | *45*
+|            | *60*   | *40*   |
+
+### a) X: Prog 1 unter den CVlern
+$$ P(X) = 40 / 45 = 88,9 \%$$
+
+### b) X: Prog 1 unter den Inf
+$$ P(X) = 20 / 55 = 36,4 \%$$
+
+### a) X: Inf unter den Prog2-Usern
+$$ P(X) = 35 / 40 = 87,5 \%$$
+
+## 1.5 Mit welcher Wahrscheinlichkeit wird die Serie nicht ausgeliefert?
+100 Drucker, davon 5 defekt. Zum Test werden 5 gezogen. Wenn im Test n > 0 defekte -> Sendung wird nicht ausgeliefert.
+
+
+Gegenereignis zu, "wenn 0 alle heil"
+$$
+P(X) = 1 - \frac{ \binom{95}{5}}{\binom{100}{5}} \approx 23,04 \%
 $$
