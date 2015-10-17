@@ -1,6 +1,7 @@
 # Mathe3
-Mathematik III für Informatiker
+Mathematik III für Informatiker. Lösungssammlung zur Selbstkontrolle.
 
 ## Mathematische Formeln
-Die Lösungen können z.B. mit Atom und dem [Markdown-Preview-Plus](https://atom.io/packages/markdown-preview-plus)-Plugin editiert und betrachtet werden werden.
-Die Formeln sollten ebenso Latex kompatibel sein. Oder nutze Katex auf https://khan.github.io/KaTeX/
+Die Lösungen können z.B. mit [Atom](https://atom.io) und dem [Markdown-Katex-Preview](https://atom.io/packages/markdown-preview-katex)-Plugin editiert und live betrachtet werden.
+
+Diese Plugin ermöglicht auch die direkte Ausgabe als PDF.
