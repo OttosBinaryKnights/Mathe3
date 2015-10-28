@@ -66,12 +66,21 @@ $$P(A | B) = \frac{P(A \cap B)}{P(B)} = \frac{\frac{18}{36}}{\frac{6}{36}} = \fr
 
 ---
 ## Aufgabe 2.5
-Für eine Firma werden drei Großrechner gekauft.
+**Für eine Firma werden drei Großrechner gekauft.
 Diese haben unterschiedliche Qualitätseigenschaften.
 Die Wahrscheinlichkeit dafür, dass diese länger als 4000 Stunden ausfallfrei
 arbeiten, betragen 0,8; 0,7; 0,6. Sei X die Anzahl der Großrechner,
-die länger als 4000 Stunden ausfallfrei arbeiten. Bestimmen Sie
-* a) die Wahrscheinlichkeitsverteilung von X,
-* b) die Verteilungsfunktion,
-* c) den Graph der Verteilungsfunktion,
-* d) $P(X \ge 1)$.
+die länger als 4000 Stunden ausfallfrei arbeiten. Bestimmen Sie**
+
+* **a) die Wahrscheinlichkeitsverteilung von X,**
+
+$X: \text{Anzahl der Grossrechner, die laenger 4000h ausfallfrei} $
+
+| $X = x_i$    |   $0$ |  $1$  |  $2$  |  $3$  |
+| ------------ | :---: | :---: | :---: | :---: |
+| $P(X = x_i)$ | 0,024 | 0,188 | 0,452 | 0,366 |
+
+
+* **b) die Verteilungsfunktion,**
+* **c) den Graph der Verteilungsfunktion,**
+* **d) $P(X \ge 1)$.**
