@@ -34,8 +34,8 @@ Ereignis ”Die Augensumme ist eine ungerade Zahl”.
 
 ## Aufgabe 2.4
 Zwei Würfel werden geworfen.
-* a) Bestimmen Sie die Wahrscheinlichkeit, die Augensumme 7 zu werfen unter
-der Bedingung, dass wenigstens einmal die Augenzahl 3 geworfen wird.
+**a) Bestimmen Sie die Wahrscheinlichkeit, die Augensumme 7 zu werfen unter
+der Bedingung, dass wenigstens einmal die Augenzahl 3 geworfen wird.**
 * b) Bestimmen Sie die Wahrscheinlichkeit, dass die Augensumme 7 ist,
 falls die Augensumme ungerade ist.
 
