@@ -33,14 +33,38 @@ Ereignis ”Die Augensumme ist eine ungerade Zahl”.
 ---
 
 ## Aufgabe 2.4
-Zwei Würfel werden geworfen.
+### Zwei Würfel werden geworfen.
 **a) Bestimmen Sie die Wahrscheinlichkeit, die Augensumme 7 zu werfen unter
 der Bedingung, dass wenigstens einmal die Augenzahl 3 geworfen wird.**
-* b) Bestimmen Sie die Wahrscheinlichkeit, dass die Augensumme 7 ist,
-falls die Augensumme ungerade ist.
+
+Zwei Würfel: 6^2 = 36 Kombinationen
+
+$A:$ "Augensumme 7"
+
+$B:$ "mindestens ein Würfel Augenzahl 3"
+
+P(B) = 2*eine Drei + Dreierpasch=
+
+$P(B) = \frac{2*5 + 1}{36} = \frac{11}{36}$
+
+$P(A \cap B) = \frac{2}{36}$
+
+$$P(A | B) = \frac{P(A \cap B)}{P(B)} = \frac{\frac{2}{36}}{\frac{11}{36}} = \frac{2}{11} = 0,181$$
+
+**b) Bestimmen Sie die Wahrscheinlichkeit, dass die Augensumme 7 ist,
+falls die Augensumme ungerade ist.**
+
+$A:$ "Augensumme 7"
+
+$B:$ "Augensumme ungerade"
+
+$P(B) = \frac{18}{36} = \frac{1}{2}$
+
+$P(A \cap B) = \frac{6}{36} = \frac{1}{6}$
+
+$$P(A | B) = \frac{P(A \cap B)}{P(B)} = \frac{\frac{18}{36}}{\frac{6}{36}} = \frac{1}{2} = 0,5$$
 
 ---
-
 ## Aufgabe 2.5
 Für eine Firma werden drei Großrechner gekauft.
 Diese haben unterschiedliche Qualitätseigenschaften.
