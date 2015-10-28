@@ -84,3 +84,5 @@ $X: \text{Anzahl der Grossrechner, die laenger 4000h ausfallfrei} $
 * **b) die Verteilungsfunktion,**
 * **c) den Graph der Verteilungsfunktion,**
 * **d) $P(X \ge 1)$.**
+
+$ P(X \ge 1) = 1 - P(X = 0) = 0,976 $
