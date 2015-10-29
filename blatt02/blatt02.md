@@ -117,7 +117,7 @@ $X: \text{Anzahl der Grossrechner, die laenger 4000h ausfallfrei} $
 
 | $X = x_i$    |   $0$ |  $1$  |  $2$  |  $3$  |
 | ------------ | :---: | :---: | :---: | :---: |
-| $P(X = x_i)$ | 0,024 | 0,188 | 0,452 | 0,366 |
+| $P(X = x_i)$ | 0,024 | 0,188 | 0,452 | 0,336 |
 
 
 * **b) die Verteilungsfunktion,**
@@ -125,10 +125,11 @@ $X: \text{Anzahl der Grossrechner, die laenger 4000h ausfallfrei} $
 
 |          |  |  |  
 | -------: | --- | --- |
-|          |  | 0,024 für $x = 0$|
-|          |  | 0,188 für $x = 1$ |
-| $F(X) =$ |  | 0,452 für $x = 2$ |
-|          |  | 0,366 für $x = 3$ |
+|          |     | 0,000 für $t < 0$
+|          |     | 0,024 für $0 <=t < 1$|
+|          |  {  | 0,212 für $1 <=t < 2$ |
+| $F(X) =$ |     | 0,664 für $2<= t < 3$ |
+|          |     | 1,000 für $3 <= t$ |
 
 * **c) den Graph der Verteilungsfunktion,**
 ![Graph der Verteilungsfunktione](2-5c_Graph_der_Verteilungsfunktion.jpg)
