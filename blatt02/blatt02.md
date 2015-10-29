@@ -23,7 +23,7 @@ Mathematik II erhalten 62% den Leistungsnachweis beim ersten Versuch.
 ---
 
 ## Aufgabe 2.3
-Ein roter und ein blauer Würfel werden geworfen.
+**Ein roter und ein blauer Würfel werden geworfen.**
 
 $$A: \text{"Der rote Wurfel zeigt eine gerade Zahl"}$$
 
@@ -38,19 +38,24 @@ $P(B) = 3/6 = 0,5$
 
 $P(C) = 16/36 = 0,5$
 
-wenn $P(A \cup C) = P(A) * P(C)$, dann stochastik abhängig:
+wenn $P(A \cap C) = P(A) * P(C)$, dann stochastik unabhängig:
 
-* $P(A \cup C) = 0,25 = P(A) * P(C) \rightarrow$ stoch. abh.
+* $P(A \cap C) = 0,25 = P(A) * P(C) \rightarrow$ stoch. unabh.
 
-* $\text{gleiche gilt fuer: }  P(B) \text{ und } P(C) \rightarrow$ stoch. abh.
+* $\text{gleiche gilt fuer: }  P(B) \text{ und } P(C) \rightarrow$ stoch. unabh.
 
-* $P(A \cup B) = 0,25 = P(A) * P(B) \rightarrow$ stoch. abh.
+* $P(A \cap B) = 0,25 = P(A) * P(B) \rightarrow$ stoch. unabh.
 
 
 **b) Sind die Ereignisse A,B und C unabhängig?**
 
----
+Gleichzeitiges eintreten von A,B,C nicht möglich.
 
+* $P(A \cap B \cap C) = 0 \neq \frac{1}{8} = P(A) * P(B) * P(C)$
+
+ $\rightarrow$ stoch. abhängig
+
+---
 ## Aufgabe 2.4
 ### Zwei Würfel werden geworfen.
 **a) Bestimmen Sie die Wahrscheinlichkeit, die Augensumme 7 zu werfen unter
