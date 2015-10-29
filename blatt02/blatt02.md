@@ -121,6 +121,15 @@ $X: \text{Anzahl der Grossrechner, die laenger 4000h ausfallfrei} $
 
 
 * **b) die Verteilungsfunktion,**
+
+
+|          |  |  |  
+| -------: | --- | --- |
+|          |  | 0,024 für $x = 0$|
+|          |  | 0,188 für $x = 1$ |
+| $F(X) =$ |  | 0,452 für $x = 2$ |
+|          |  | 0,366 für $x = 3$ |
+
 * **c) den Graph der Verteilungsfunktion,**
 ![Graph der Verteilungsfunktione](2-5c_Graph_der_Verteilungsfunktion.jpg)
 * **d) $P(X \ge 1)$.**
