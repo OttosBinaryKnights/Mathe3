@@ -24,11 +24,30 @@ Mathematik II erhalten 62% den Leistungsnachweis beim ersten Versuch.
 
 ## Aufgabe 2.3
 Ein roter und ein blauer Würfel werden geworfen.
-Seien A das Ereignis ”Der rote Würfel zeigt eine gerade Zahl”,
-B das Ereignis ”Der blaue Würfel zeigt eine gerade Zahl” und C das
-Ereignis ”Die Augensumme ist eine ungerade Zahl”.
-* a) Untersuchen Sie, ob die Ereignisse A,B und C paarweise unabhängig sind.
-* b) Sind die Ereignisse A,B und C unabhängig?
+
+$$A: \text{"Der rote Wurfel zeigt eine gerade Zahl"}$$
+
+$$B: \text{"Der blaue Wurfel zeigt eine gerade Zahl"}$$
+
+$$C: \text{"Die Augensumme ist eine ungerade Zahl"}.$$
+**a) Untersuchen Sie, ob die Ereignisse A,B und C paarweise unabhängig sind.**
+
+$P(A) = 3/6 = 0,5$
+
+$P(B) = 3/6 = 0,5$
+
+$P(C) = 16/36 = 0,5$
+
+wenn $P(A \cup C) = P(A) * P(C)$, dann stochastik abhängig:
+
+* $P(A \cup C) = 0,25 = P(A) * P(C) \rightarrow$ stoch. abh.
+
+* $\text{gleiche gilt fuer: }  P(B) \text{ und } P(C) \rightarrow$ stoch. abh.
+
+* $P(A \cup B) = 0,25 = P(A) * P(B) \rightarrow$ stoch. abh.
+
+
+**b) Sind die Ereignisse A,B und C unabhängig?**
 
 ---
 
