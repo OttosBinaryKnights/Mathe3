@@ -10,9 +10,29 @@ prüfen Sie die Eigenschaften K1,K2 und K3.
 ## Aufgabe 2.2
 **Die Modulprüfungen zur Mathematik I und II können als benotete oder unbenotete Leistungen abgelegt werden. Für den unbenoteten Leistungsnachweis entscheiden sich 30% der Studierenden in der Mathematik I und 60% in der Mathematik II. In Mathematik I erreichen 68% der Studierenden den Leistungsnachweis und in Mathematik II erhalten 62% den Leistungsnachweis beim ersten Versuch.**
 
+$$A: \text{"Mathe 1 Schein"}$$
+
+$$a: \text{"Mathe 1 im ersten Versuch bestanden"}$$
+
+$$B: \text{"Mathe 2 Schein"}$$
+
+$$b: \text{"Mathe 2 im ersten Versuch bestanden"}$$
+
  * **a) Wieviel % der Studierenden erreichen im ersten Versuch den Leistungsnachweis in Mathematik II, nachdem sie den Leistungsnachweis in Mathematik I im ersten Versuch erhalten haben?**
 
+*"Wahrscheinlichkeit von b unter der Vorraussetzung a"*
+
+ $P(b | a)
+ = \frac{P(b \cap a)}{P(a)}
+ = \frac{ 0,62 * 0,68 }{0,62}
+ = 0,68$
+
  * **b) Wieviel % der Studierenden erreichen im ersten Versuch den Leistungsnachweis in Mathematik II, obwohl sie den Leistungsnachweis in Mathematik I im ersten Versuch nicht erhalten haben?**
+
+$P(b | \bar{a})
+= \frac{ P(b\cap\bar{a} )}{ P(\bar{a}) }
+= \frac{ 0,62 * 0,32 }{0,62}
+= 0,32$
 
 ---
 
