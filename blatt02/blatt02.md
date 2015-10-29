@@ -1,9 +1,8 @@
 # Blatt 02
 ## Aufgabe 2.1
-Sei A Ereignis eines Zufallsexperimentes mit dem Ereignisraum $\Omega$.
+**Sei A Ereignis eines Zufallsexperimentes mit dem Ereignisraum $\Omega$.
 Betrachten Sie die Abbildung $P' : 2\Omega \rightarrow [0,1]$ deﬁniert durch $P'(B) := P(A\cup B)$.
-Untersuchen Sie, ob P' eine Wahrscheinlichkeit auf $\Omega $ deﬁniert, d.h.
-prüfen Sie die Eigenschaften K1,K2 und K3.
+Untersuchen Sie, ob P' eine Wahrscheinlichkeit auf $\Omega $ deﬁniert, d.h. prüfen Sie die Eigenschaften K1,K2 und K3.**
 
 ---
 
@@ -114,6 +113,8 @@ die länger als 4000 Stunden ausfallfrei arbeiten. Bestimmen Sie**
 
 $X: \text{Anzahl der Grossrechner, die laenger 4000h ausfallfrei} $
 
+![Graph der Verteilungsfunktione](2-5a_Verteilungsbaum.jpg)
+
 | $X = x_i$    |   $0$ |  $1$  |  $2$  |  $3$  |
 | ------------ | :---: | :---: | :---: | :---: |
 | $P(X = x_i)$ | 0,024 | 0,188 | 0,452 | 0,366 |
@@ -121,6 +122,7 @@ $X: \text{Anzahl der Grossrechner, die laenger 4000h ausfallfrei} $
 
 * **b) die Verteilungsfunktion,**
 * **c) den Graph der Verteilungsfunktion,**
+![Graph der Verteilungsfunktione](2-5c_Graph_der_Verteilungsfunktion.jpg)
 * **d) $P(X \ge 1)$.**
 
 $ P(X \ge 1) = 1 - P(X = 0) = 0,976 $
