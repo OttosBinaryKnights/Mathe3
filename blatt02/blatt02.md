@@ -8,17 +8,11 @@ prüfen Sie die Eigenschaften K1,K2 und K3.
 ---
 
 ## Aufgabe 2.2
-Die Modulprüfungen zur Mathematik I und II können als benotete oder unbenotete
-Leistungen abgelegt werden. Für den unbenoteten Leistungsnachweis entscheiden
-sich 30% der Studierenden in der Mathematik I und 60% in der Mathematik II.
-In Mathematik I erreichen 68% der Studierenden den Leistungsnachweis und in
-Mathematik II erhalten 62% den Leistungsnachweis beim ersten Versuch.
- * a) Wieviel % der Studierenden erreichen im ersten Versuch den
- Leistungsnachweis in Mathematik II, nachdem sie den Leistungsnachweis in
-  Mathematik I im ersten Versuch erhalten haben?
- * b) Wieviel % der Studierenden erreichen im ersten Versuch den
-  Leistungsnachweis in Mathematik II, obwohl sie den Leistungsnachweis
-  in Mathematik I im ersten Versuch nicht erhalten haben?
+**Die Modulprüfungen zur Mathematik I und II können als benotete oder unbenotete Leistungen abgelegt werden. Für den unbenoteten Leistungsnachweis entscheiden sich 30% der Studierenden in der Mathematik I und 60% in der Mathematik II. In Mathematik I erreichen 68% der Studierenden den Leistungsnachweis und in Mathematik II erhalten 62% den Leistungsnachweis beim ersten Versuch.**
+
+ * **a) Wieviel % der Studierenden erreichen im ersten Versuch den Leistungsnachweis in Mathematik II, nachdem sie den Leistungsnachweis in Mathematik I im ersten Versuch erhalten haben?**
+
+ * **b) Wieviel % der Studierenden erreichen im ersten Versuch den Leistungsnachweis in Mathematik II, obwohl sie den Leistungsnachweis in Mathematik I im ersten Versuch nicht erhalten haben?**
 
 ---
 
