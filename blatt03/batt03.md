@@ -107,9 +107,9 @@ Ausfälle $x_i$ |  0  |  1  |   2  |  3  |  4  |  >4
  :---          |:---:|
 $P(X=x_i)$      | 0,5 | 0,2 | 0,1  | 0,1 | 0,1 | 0
 
-**Der Ausfall des Servers verursacht verschiedene Kosten. Der einmalige Ausfall des Servers kostet 1000EUR. Fällt der Server zweimal aus, so betragen die Kosten 1500EUR. Bei drei- und viermaligem Ausfall mussen jeweils 2000EUR bezahlt werden. Wie groß ist die Wahrscheinlichkeit dafur, dass mehr als 1000EUR Kosten im Monat wegen Ausfallen des Servers entstehen?**
+**Der Ausfall des Servers verursacht verschiedene Kosten. Der einmalige Ausfall des Servers kostet 1000 EUR. Fällt der Server zweimal aus, so betragen die Kosten 1500 EUR. Bei drei- und viermaligem Ausfall mussen jeweils 2000 EUR bezahlt werden. Wie groß ist die Wahrscheinlichkeit dafur, dass mehr als 1000 EUR Kosten im Monat wegen Ausfällen des Servers entstehen?**
 
-$P(\text{"Mehr als 1000EUR kosten im Monat"}) = P(X >= 2) =$
+$P(\text{"Mehr als 1000 EUR Kosten im Monat"}) = P(X >= 2) =$
 $= P(X=2)+P(X=3)+P(X=4)+P(X>4) =$
 $0,1 + 0,1 + 0,1 +0 = 0,3$
 
