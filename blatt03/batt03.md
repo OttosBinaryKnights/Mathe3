@@ -119,4 +119,28 @@ $0,1 + 0,1 + 0,1 +0 = 0,3$
 
 **(a) die Verteilungsfunktion $F(x)$,**
 
-**(b)  die Wahrscheinlichkeit, dass in der Zeit $t$ wenigstens ein Computernetzintakt ist.**
+$A: \text{System A intakt}$
+
+$B: \text{System B intakt}$
+
+Intakte Systeme $x_i$ |  2  |  1  |   0  |
+ :---                 |:---:|
+$P(X=x_i)$            | 0,72| 0,26 | 0,02
+
+$P(X=2) = P(A) * P(B) =0,9 * 0,8 = 0,72$
+
+$P(X=1) = P(\overline{A}) * P(B) + P(A) * P(\overline{B}) = 0,1 * 0,8 + 0,9 * 0,2 = 0,26$
+
+$P(X=0) = P(\overline{A}) * P(\overline{B}) = 0,1 * 0,2 = 0,02$
+
+|       |     |  0  | für | $t<0$ |
+| :---: | --- | --- | --- | --- |
+| F(X)= |     | 0,02 | für | $0 <= t < 1$ |
+|       |     | 0,28 | für | $1 <= t < 2$ |
+|       |     | 1 | für | $2 <= t $ |
+
+**(b)  die Wahrscheinlichkeit, dass in der Zeit $t$ wenigstens ein Computernetz intakt ist.**
+
+Gegenereignis zu "alle ausgefallen"
+
+$P(X>=1) = 1 - P(X=0) = 0,98$
