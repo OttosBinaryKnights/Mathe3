@@ -1,6 +1,8 @@
 # Mathe3
 Mathematik III für Informatiker. Lösungssammlung zur Selbstkontrolle.
+
 Link zu den [Übungsblättern hier](http://fma2.math.uni-magdeburg.de/~mathww/POTT/mathIII/)
+
 Diskussionen, Alternativlösungen und Anregungen bitte zuerst im [Issue-Tracking von Mathe3](https://github.com/OttosBinaryKnights/Mathe3/issues)
 
 ## Mathematische Formeln
