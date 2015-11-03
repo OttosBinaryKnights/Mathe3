@@ -97,15 +97,21 @@ $ Z: \text{Ergebnis des ersten Wurfes.}$
 
 **Berechnen Sie: $P(1 < X <= 4); P(1 <= X <= 4); P(X>=3)$.**
 
+$P(1 < X <= 4) = $
+
 ---
 ## Aufgabe 3.4
-**Die zufallige Anzahl $X$ von Ausfällen eines Servers pro Monat genügt folgender Verteilung:**
+**Die zufällige Anzahl $X$ von Ausfällen eines Servers pro Monat genügt folgender Verteilung:**
 
 Ausfälle $x_i$ |  0  |  1  |   2  |  3  |  4  |  >4
  :---          |:---:|
 $P(X=x_i)$      | 0,5 | 0,2 | 0,1  | 0,1 | 0,1 | 0
 
-**Der Ausfall des Servers verursacht verschiedene Kosten. Der einmalige Ausfall des Servers kostet 1000EUR.Fällt der Server zweimal aus, so betragen die Kosten 1500EUR. Bei drei- und viermaligem Ausfall mussen jeweils 2000EUR bezahlt werden. Wie groß ist die Wahrscheinlichkeit dafur, dass mehr als 1000EUR Kosten im Monat wegen Ausfallen des Servers entstehen?**
+**Der Ausfall des Servers verursacht verschiedene Kosten. Der einmalige Ausfall des Servers kostet 1000EUR. Fällt der Server zweimal aus, so betragen die Kosten 1500EUR. Bei drei- und viermaligem Ausfall mussen jeweils 2000EUR bezahlt werden. Wie groß ist die Wahrscheinlichkeit dafur, dass mehr als 1000EUR Kosten im Monat wegen Ausfallen des Servers entstehen?**
+
+$P(\text{"Mehr als 1000EUR kosten im Monat"}) = P(X >= 2) =$
+$= P(X=2)+P(X=3)+P(X=4)+P(X>4) =$
+$0,1 + 0,1 + 0,1 +0 = 0,3$
 
 ---
 ## Aufgabe 3.5
