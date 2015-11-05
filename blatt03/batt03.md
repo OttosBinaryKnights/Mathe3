@@ -89,7 +89,25 @@ $ Z: \text{Ergebnis des ersten Wurfes.}$
 |  $P(Y=t)$   | $\frac{25}{36}$ | $\frac{10}{36}$ | $\frac{1}{36}$ |0 | 0 | 0 | 0 |
 |  $P(Z=t)$   | 0 | $\frac{1}{6}$ | $\frac{1}{6}$ |$\frac{1}{6}$ |$\frac{1}{6}$ |$\frac{1}{6}$ |$\frac{1}{6}$ |
 
+Entweder für alle Fälle Zeigen oder ein Gegenbeispiel.
 $P(X=x_i, Y=y_j) = P(X=x_i) P(Y=y_j) (i=1, ..,I; j=1, ..., J)$
+
+Für Unabhängigkeit X,Y:
+alle Fälle durchrechnen. zB. für X=2 Y=0
+$P(X=2,Y=0) = 4/36 = 1/9$
+
+Für  Abhängigkeit X,Z durch Gegenbeispiel:
+
+$P(X=2, Z=3)=0$
+
+$P(X=2)*P(Z=3) = ... \neq 0$
+
+Für  Abhängigkeit Y,Z durch Gegenbeispiel:
+
+$P(Y=2, Z=2)=0$
+
+$P(Y=2) * P(Z=3)=1/36 * 1/6 = ... \neq 0 = P(Y=2, Z=2)$
+
 
 ---
 ## Aufgabe 3.3
@@ -105,12 +123,17 @@ $P(X=x_i, Y=y_j) = P(X=x_i) P(Y=y_j) (i=1, ..,I; j=1, ..., J)$
 
 **Berechnen Sie: $P(1 < X <= 4); P(1 <= X <= 4); P(X>=3)$.**
 
- * für stetige Funktion über Dichtefunktion zu lösen
- * für diskrete Funktion hingegen über Binomialverteilung?!
+$P(1 < X <= 4) = P(X<=4) - P(X<=1) = $
+$= F(4) - F(1) = 0,8 - 0,1 = 0,7$
 
-$P(1 < X <= 4) = P(X<=4) - P(X<1) = 0,8 - 0,1 = 0,7$
+$P(1 <= X <= 4) = P(X<=4) - P(X<1) = $
+  * *Anmerkung Höding:*
+  Da F(1) aber P(X<=1) nicht P(X<1) entspricht:
+  $P(X<=4) - (P(X<1) + P(X=1) + P(X=1)) = P(X<=4) - (P(X<=1) + P(X=1)) = $
+  P(X=1) fällt weg daher:
+  $= P(X<=4) - (P(X<=1) + 0) = F(4) - F(1)=$
 
-$P(1 <= X <= 4) = P(X<=4) - P(X<=1) = 0,8 - 0,1 = 0,7$
+$= 0,8 - 0,1 = 0,7$
 
 $P(X >= 3) = 1 - P(X<3) = 1 - 0,4 = 0,6$
 
