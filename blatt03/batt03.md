@@ -83,16 +83,13 @@ $ Z: \text{Ergebnis des ersten Wurfes.}$
 
 **Welche der Zufallsvariablen sind unabhangig (Definition von Unabhängigkeit von Zufallsvariablen kommt am 29.10. in der Vorlesung). Begründen Sie Ihre Antwort!**
 
-|             |     | $\frac{1}{4}$ | für | $t=0$|
-| :---------: | --- | --- | --- | --- |
-|  $P(X=t)=$  |     | $\frac{1}{2}$ | für | $t=1$ |
-|             |     |  $\frac{1}{4}$  | für | $t =2$ |
+|       t     |  0  |  1  |  2  |  3  |  4  |  5  |  6  |
+|  ---------: | --- | --- | --- |
+|  $P(X=t)$   | $\frac{1}{4}$ | $\frac{1}{2}$ | $\frac{1}{4}$ | 0 | 0 | 0 | 0 |
+|  $P(Y=t)$   | $\frac{25}{36}$ | $\frac{10}{36}$ | $\frac{1}{36}$ |0 | 0 | 0 | 0 |
+|  $P(Z=t)$   | 0 | $\frac{1}{6}$ | $\frac{1}{6}$ |$\frac{1}{6}$ |$\frac{1}{6}$ |$\frac{1}{6}$ |$\frac{1}{6}$ |
 
-|             |     |  0  | für | $t<0$ |
-| :---------: | --- | --- | --- | --- |
-|             |     | $\frac{1}{4}$ | für | $0 <= t < 1$|
-| $F(X=t)=$ |     | $\frac{3}{4}$ | für | $1 <= t < 2$ |
-|             |     |  $1$  | für | $t >= 2$ |
+$P(X=x_i, Y=y_j) = P(X=x_i) P(Y=y_j) (i=1, ..,I; j=1, ..., J)$
 
 ---
 ## Aufgabe 3.3
@@ -109,9 +106,13 @@ $ Z: \text{Ergebnis des ersten Wurfes.}$
 **Berechnen Sie: $P(1 < X <= 4); P(1 <= X <= 4); P(X>=3)$.**
 
  * für stetige Funktion über Dichtefunktion zu lösen
- * für diskrete Funktion hingegen über?
+ * für diskrete Funktion hingegen über Binomialverteilung?!
 
-$P(1 < X <= 4) = \int_1^4F(t)dt = $
+$P(1 < X <= 4) = P(X<=4) - P(X<1) = 0,8 - ??? = ???$
+
+$P(1 <= X <= 4) = P(X<=4) - P(X<=1) = 0,8 - ??? = ???$
+
+$P(X >= 3) = 1 - P(X<3) = 1 - ??? = ???$
 
 ---
 ## Aufgabe 3.4
