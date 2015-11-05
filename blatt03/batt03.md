@@ -108,11 +108,11 @@ $P(X=x_i, Y=y_j) = P(X=x_i) P(Y=y_j) (i=1, ..,I; j=1, ..., J)$
  * für stetige Funktion über Dichtefunktion zu lösen
  * für diskrete Funktion hingegen über Binomialverteilung?!
 
-$P(1 < X <= 4) = P(X<=4) - P(X<1) = 0,8 - ??? = ???$
+$P(1 < X <= 4) = P(X<=4) - P(X<1) = 0,8 - 0,1 = 0,7$
 
-$P(1 <= X <= 4) = P(X<=4) - P(X<=1) = 0,8 - ??? = ???$
+$P(1 <= X <= 4) = P(X<=4) - P(X<=1) = 0,8 - 0,1 = 0,7$
 
-$P(X >= 3) = 1 - P(X<3) = 1 - ??? = ???$
+$P(X >= 3) = 1 - P(X<3) = 1 - 0,4 = 0,6$
 
 ---
 ## Aufgabe 3.4
