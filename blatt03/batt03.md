@@ -1,6 +1,6 @@
 # Blatt 03
 ## Aufgabe 3.1
-**Wir  fuhren  das  Experiment  durch  "Zweimal  hintereinander würfeln".
+**Wir  führen  das  Experiment  durch  "Zweimal  hintereinander würfeln".
 Welche der folgenden Ereignisse sind unabhangig.**
 
 |   | 1 | 2 | 3 | 4 | 5 | 6 |
@@ -77,11 +77,22 @@ $ \rightarrow $ stochastisch abhängig
 $\Omega = \{1;2;3;4;5;6\} \times \{1;2;3;4;5;6\} $
 **Wir definieren drei Zufallsvariablen:**
 
-$X: \text{Anzahl der Wurfe, bei denen eine gerade Zahl geworfen wird.}$
-$Y: \text{Anzahl der Wurfe, bei denen eine Zahl 5 geworfen wird.}$
+$X: \text{Anzahl der Wuerfe, bei denen eine gerade Zahl geworfen wird.}$
+$Y: \text{Anzahl der Wuerfe, bei denen eine Zahl 5 geworfen wird.}$
 $ Z: \text{Ergebnis des ersten Wurfes.}$
 
-**Welche der Zufallsvariablen sind unabhangig (Definition von Unabhangigkeit von Zufallsvariablen kommt am 29.10. in der Vorlesung). Begründen Sie Ihre Antwort!**
+**Welche der Zufallsvariablen sind unabhangig (Definition von Unabhängigkeit von Zufallsvariablen kommt am 29.10. in der Vorlesung). Begründen Sie Ihre Antwort!**
+
+|             |     | $\frac{1}{4}$ | für | $t=0$|
+| :---------: | --- | --- | --- | --- |
+|  $P(X=t)=$  |     | $\frac{1}{2}$ | für | $t=1$ |
+|             |     |  $\frac{1}{4}$  | für | $t =2$ |
+
+|             |     |  0  | für | $t<0$ |
+| :---------: | --- | --- | --- | --- |
+|             |     | $\frac{1}{4}$ | für | $0 <= t < 1$|
+| $F(X=t)=$ |     | $\frac{3}{4}$ | für | $1 <= t < 2$ |
+|             |     |  $1$  | für | $t >= 2$ |
 
 ---
 ## Aufgabe 3.3
@@ -97,7 +108,10 @@ $ Z: \text{Ergebnis des ersten Wurfes.}$
 
 **Berechnen Sie: $P(1 < X <= 4); P(1 <= X <= 4); P(X>=3)$.**
 
-$P(1 < X <= 4) = $
+ * für stetige Funktion über Dichtefunktion zu lösen
+ * für diskrete Funktion hingegen über?
+
+$P(1 < X <= 4) = \int_1^4F(t)dt = $
 
 ---
 ## Aufgabe 3.4
