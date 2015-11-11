@@ -8,14 +8,41 @@
 (a) **Zeigen Sie, dass $f$ Dichtefunktion einer Verteilungsfunktion ist.**
 
 Eigenschaften einer Verteilungsfunktion:
- * $F$ ist monoton steigend
- * $F$ ist rechtsseitig stetig
- * $lim_{x \rightarrow- \infty} F(x)=0$ und $lim_{x \rightarrow \infty} F(x)=1$
+ 1. $F$ ist monoton steigend
+ 2. $F$ ist rechtsseitig stetig
+ 3. $lim_{x \rightarrow- \infty} F(x)=0$ und $lim_{x \rightarrow \infty} F(x)=1$
 
 *Idee: *
-Da Dichtefunktion Integral einer Verteilungsfunktion $F(X)$ ist müssen diese Kriterien auf die Ableitung von $f'(x)=F(X)$ zutreffen.
+Da Dichtefunktion Integral einer Verteilungsfunktion $F(X)$ ist müssen diese Kriterien auf das Integral von $\int f(x)=F(X)$ zutreffen.
 
-(b)  **Bestimmen Sie Erwartungswert und Median.**
+*z.z. F(X) monoton steigend*
+
+* $F'(x) >= 0$
+da $F'(x) = f(x)$ und $f(x) >= 0$
+$$ \rightarrow F(X)\text{ monoton steigend}$$
+
+*Z.z. F(X) ist rechtsseitig stetig*
+
+  * Da f'(x) keine Nullstellen -> ganz F(x) stetig, somit auch rechtsstetig
+
+  TODO: (ggf. noch rechnen)
+
+*Z.z. $lim_{x \rightarrow- \infty} F(x)=0$ und $lim_{x \rightarrow \infty} F(x)=1$ :*
+* $lim_{x \rightarrow- \infty} F(x) = lim_{x \rightarrow- \infty} \int_{-\infty}^{x} 0 = 0$
+
+* $lim_{x \rightarrow \infty} F(x) = lim_{x \rightarrow \infty} \int_{-\infty}^{x} f(x) =
+\int_{-1}^{0} f(x) + \int_{0}^{1} f(x) = $
+
+  $= \int_{-1}^{0} f(x) dx+ \int_{0}^{1} f(x) dx=
+ \int_{-1}^{0} (x)dx + \int_{0}^{1} (-x+2) dx =$
+
+ $= [0,5 x^2]_{-1}^0 + [-0,5x^2+2x]_0^1 =$
+
+ $= -0,5 - 0,5 + 2 = 1$
+
+(b)  **Bestimmen Sie Erwartungswert und Median**
+
+$E(X) = \int_0^\infty (1-F(x))dx - \int_{-\infty}^0 F(x)dx = $
 
 ## Aufgabe 4.2
 **Gegeben sei eine Funktionf:R!Rmitf(x) =1(1 +x2):(a)  Zeigen Sie, dassfDichtefunktion einer Verteilungsfunktion ist (Hilf-reich konnte die Aufgabe 7.4 aus Mathematik II des letzten Semesterssein.).(b)  Bestimmen Sie die Verteilungsfunktion und skizzieren Sie den Graphender Verteilungsfunktion.**
