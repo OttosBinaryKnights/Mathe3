@@ -12,7 +12,8 @@ Eigenschaften einer Verteilungsfunktion:
  * $F$ ist rechtsseitig stetig
  * $lim_{x \rightarrow- \infty} F(x)=0$ und $lim_{x \rightarrow \infty} F(x)=1$
 
-
+*Idee: *
+Da Dichtefunktion Integral einer Verteilungsfunktion $F(X)$ ist müssen diese Kriterien auf die Ableitung von $f'(x)=F(X)$ zutreffen.
 
 (b)  **Bestimmen Sie Erwartungswert und Median.**
 
