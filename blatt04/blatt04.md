@@ -129,28 +129,32 @@ $$ x_1 = 1.74; x_{2,3}\text{ n.d. in R }$$
 
 (a) **Bestimmen Sie $\alpha$ so, dass $f$ die Dichtefunktion einer stetigen Zufallsgröße ist.**
 
-Gesucht $\alpha$ für: $\int_{-\infty}^{\infty} f(x) dx = \int_0^1 f(x) dx = 1$
+Gesucht $\alpha$ für: $\int_{-\infty}^{\infty} f(x) dx <=> \int_0^1 f(x) dx = 1$
 
-$\int_0^1 (\alpha x^2(1-x)) dx =
-\alpha \int_0^1  x^2(1-x) dx =
-\alpha \int_0^1  (x^2-x^3) dx =
-\alpha( \int_0^1  x^2dx-\int_0^1 x^3 dx )=$
-$ =\alpha([\frac{x^3}{3}]_0^1 -[\frac{x^4}{4}]_0^1) =
-\alpha (\frac13 - \frac14) = \alpha \frac{1}{12}$
+$\int_0^1 (\alpha x^2(1-x)) dx $
+$= \alpha \int_0^1  x^2(1-x) dx $
+$= \alpha \int_0^1  (x^2-x^3) dx $
+$= \alpha( \int_0^1  x^2dx-\int_0^1 x^3 dx )$
+$= \alpha([\frac{x^3}{3}]_0^1 -[\frac{x^4}{4}]_0^1)$
+$= \alpha (\frac13 - \frac14)$
+$= \alpha \frac{1}{12}$
 $$\rightarrow \alpha = 12$$
 
-
+mit $\alpha =12$ $f(x)>=0 \rightarrow$ passt
 
 (b) **Ermittlen Sie die Verteilungsfunktion und den Erwartungswert E(X).**
 
 Verteilungsfunktion aus Zeile bei a: $ \alpha([\frac{x^3}{3}]_0^1 -[\frac{x^4}{4}]_0^1) $
 
-| $F(x) =$ | $0$ |für | $0<x$
-| --- |
-| | $12(\frac{x^3}{3} -\frac{x^4}{4}) $ |für | $0<=x<=1$
-| | 1 |für |$x>1$|
+FIXME: Hier Fehler
 
-$E(X) = \int $
+| $F(t) =$ | $0$ |für | $0<t$
+| --- |
+| | $12(\frac{x^3}{3} -\frac{x^4}{4}) $ |für | $0<=t<=1$
+| | 1 |für |$t>1$|
+
+$E(X) = \int ... = [\frac{12x^4}{4}- \frac{12x^5}{5}]^1_0 = \frac35$
+
 TODO: Erwartungswert E(X) bestimmen!
 
 *Median bei F(x) = 1/2:*
@@ -165,7 +169,13 @@ $$ \rightarrow\text{ Median bei }x=0.613272$$
 ![Plot](Plot4.4c.jpg)
 
 (d) **Berechnen Sie $P(X <\frac{1}{2})$ und $P(X < E(X))$.**
-TODO: Berechnen
+
+$P(X <\frac{1}{2}) = \int_{0}^{0.5}12x^2(1-x)dx =\frac5{16}$
+
+TODO: Fill Integral
+
+$P(X < E(X)) = \int_0^{0.6} 12x^2(1-x)dx = 0.4752$
+
 ## Aufgabe 4.5
 **Die  ausfallfreie  Arbeitszeit $X$ (in  Zeiteinheiten)  einer  Art von Computerbauteilen hat die folgende Verteilungsfunktion $F(t)$:**
 
@@ -174,36 +184,50 @@ TODO: Berechnen
 | | $1-e^{-0,5t}$ für $t>=0$|
 
 (a)  **Bestimmen Sie die Wahrscheinlichkeit dafür, dass ein solches Bauteil mindestens eine Zeiteinheit ohne Ausfall arbeitet.**
-$P(X>=1) = 1- P(X<1) = 1 - (P(X<=1)-P(X=1)) =$
-$1- F(1) = 1 - e^{-0,5} = 1 - 0.303 ... \approx 0.697$
+
+$P(X>=1) = 1- P(X<1) $
+$= 1 - (P(X<=1)-P(X=1))$
+$= 1- F(1) =  e^{-0.5} (\approx 0.303)$
 
 (b) **Bestimmen  Sie  die  zugehörige  Dichtefunktion $f(x)$ der  Verteilungsfunktion $F$ und die mittlere ausfallfreie Arbeitszeit.**
 
-$f(t) = F'(t) = 0,5 e^{-0,5t}$
+$f(t) = F'(t) = - e^{-0.5t} (-0.5)=0,5 e^{-0.5t}$
+angeblich fällt das t im Potenz weg:
+$0,5 e^{-0.5}$
 
 |  $f(t)=$  | $0$ für $t <0$ |
 | --- | ---: |
-| | $0,5 e^{-0,5t}$ für $t>=0$|
+| | $0.5 e^{-0,5t}$ für $t>=0$|
 
-TODO: "mittlere ausfallfreie Arbeitszeit" BZW Fehler finden
 
-$E(X) = \int_{-\infty}^{\infty}t*f(t) dt = 0 +\int_{0}^{\infty}t*f(t) dt $
+$E(X) = \int_{-\infty}^{\infty}x*f(x) dx$
+$= \int_{0}^{\infty}x*f(x) dx $
+$= $
 
-$\int t*0,5 e^{-0,5t} dt =
-0,5 \int t*e^{-0,5t}dt =$
+---
+
+$\int x*0,5 e^{-0,5x} dx =
+0,5 \int x*e^{-0,5x}dx =$
 
 *partielle Integration*
-$$ u = 0,5*t; v' = e^{-0,5t}$$
-$$ u' = 0,5; v = -0,5*e^{-0,5t}$$
+$$ v = x; u' = -e^{-0,5x}$$
+$$ v' = 1; u = 0,5*e^{-0,5x}$$
 
 $$\int u v' = uv - \int u'v$$
+
+---
+das hier stimmt nicht:
+
 $
-[0,5*t * (-0,5)*e^{-0,5t}] - \int(0,5*(-0,5)*e^{-0,5t})=$
-$[-0.25t*e^{-0,5t}]-[-0.5 e^{-0.5t}]$
+[0,5*x * (-0,5)*e^{-0,5x}] - \int(0,5*(-0,5)*e^{-0,5x})=$
+$[-0.25x*e^{-0,5x}]-[-0.5 e^{-0.5x}]$
 
-$E(X) = [-0.25t*e^{-0.5t}]_{0}^{\infty}-[-0.5 e^{-0.5t}]_{0}^{\infty} =$
 
-$=lim_{t \rightarrow \infty} (-0.25t*e^{-0,5t}+0.5 e^{-0.5t}) = ?$
 
-es sollte rauskommen:
+$E(X) = [-0.25x*e^{-0.5x}]_{0}^{\infty}-[-0.5 e^{-0.5x}]_{0}^{\infty} =$
+
+$=lim_{x \rightarrow \infty} (-0.25x*e^{-0,5x}+0.5 e^{-0.5x}) = ?$
+
+---
+es sollte rauskommen: (Bestätigt durch Wolfram Alpha)
 $=2$
