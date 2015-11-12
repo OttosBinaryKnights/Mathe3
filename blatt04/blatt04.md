@@ -1,7 +1,4 @@
 # Übung 4
-
-Erwartungswert:
-$$E(x) = $$
 ## Aufgabe 4.1
 **Gegeben sei eine Funktion $f:R \rightarrow R$ mit**
 
@@ -88,12 +85,16 @@ $=\frac1\pi arctan(t)-\frac12$
 
 **(a)  Bestimmen Sie die Verteilungsfunktion von X.**
 
-$F(X) = \int_{-\infty}^x f(x) dx $
+$F(t) = \int_{-\infty}^t f(x) dx $
 
-für x>0:
- $ \int_{0}^x f(x) dx =[-e^{-0.02 x^3}]_{0}^x = -e^{-0.02 x^3} + e^0 = 1 -e^{-0.02 x^3}$
+$= \int_{0}^t f(x) dx$
 
-TODO: Prüfen und Rechenweg einfügen
+TODO: Substitution einfügen
+
+SUBSTITUIEREN: ($-0,02x^3$)
+
+$=[-e^{-0.02 x^3}]_{0}^t = -e^{-0.02 x^3} + e^0 = 1 -e^{-0.02 x^3}$
+
 
 | $F(x) =$ | $0$ | für $x <=0$|
 | --- | --- |
@@ -101,10 +102,11 @@ TODO: Prüfen und Rechenweg einfügen
 
 **(b)  Wie  groß  ist  die  Wahrscheinlichkeit  dafür,  dass  ein  solches  Bauelement mindestens 2 Zeiteinheiten ausfallfrei arbeitet?**
 
-$P (X >= 2) = 1- P(X<2) = 1-P(X<=2) =$
-$=1 - F(2) = $
-$= 1-(1-e^{ -0.02 *2^3} )=
-1-(1-e^{-0,16} ) = e^{-0,16} \approx 0,852 $
+$P (X >= 2) =$
+$=1 - F(2) $
+$= 1-(1-e^{ -0.02 *2^3} )$
+$= 1-(1-e^{-0,16} ) $
+$= e^{-0,16} \approx 0,852 $
 
 **(c)  Welche Zeit überleben ungefähr 90% der Bauelemente?**
 
@@ -115,7 +117,7 @@ $$ e^{-0.02 x^3} = 0.9$$
 $$ -0.02 x^3 = ln(0.9)$$
 $$ x^3 = -ln(0.9) / 0.02$$
 $$ x = \sqrt[3]{-ln(0.9) / 0.02}$$
-$$ x_1 = 1.74; x_{2,3}\text{ n.d. in R }$$
+$$ x_1 = 1.74; x_{2,3}\text{ n.def. in R }$$
 
 
 ## Aufgabe 4.4
