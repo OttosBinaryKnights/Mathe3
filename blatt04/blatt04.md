@@ -49,7 +49,11 @@ $E(X) = \int_0^\infty (1-F(x))dx - \int_{-\infty}^0 F(x)dx = $
 $$f(x) =\frac{1}{\pi(1 +x^2)}$$**
 **(a) Zeigen Sie, dass $f$ Dichtefunktion einer Verteilungsfunktion ist (Hilfreich konnte die Aufgabe 7.4 aus Mathematik II des letzten Semesters sein.).**
 
+TODO: Zeigen das f eine Dichtefunktion ist
+
 **(b)  Bestimmen Sie die Verteilungsfunktion und skizzieren Sie den Graphen der Verteilungsfunktion.**
+
+TODO: Verteilungsfunktions bestimmen und skizzieren
 
 ## Aufgabe 4.3
 **Die Lebensdauer $X$ (in Zeiteinheiten) eines Speichermedium seines Computers kann durch die Dichtefunktion **
@@ -64,12 +68,20 @@ $$f(x) =\frac{1}{\pi(1 +x^2)}$$**
 
 $F(X) = \int_{-\infty}^x f(x) dx = [-e^{-0.02 x^3}]$
 
+TODO: Prüfen und Rechenweg einfügen
+
+| $F(x) =$ | $0$ | für $x <=0$|
+| --- | --- |
+|   | $-e^{-0.02 x^3}$ |für $x >0$ |
+
 **(b)  Wie  groß  ist  die  Wahrscheinlichkeit  dafür,  dass  ein  solches  Bauelement mindestens 2 Zeiteinheiten ausfallfrei arbeitet?**
 
 $P (X > 2) = 1- F(2) = 1- \int_{-\infty}^2f(x)dx = 1- 0 + \int_{0}^2f(x)dx =$
 $= 1-(-e^{-0.02 *2^3} -(-e^{-0.02 *0^3}) )= 1-(-e^{-0,16} + e^0) = e^{-0,16} \approx 0,852 $
 
 **(c)  Welche Zeit überleben ungefähr 90% der Bauelemente?**
+
+TODO: Zeit berechnen
 
 ## Aufgabe 4.4
 **Es sei $f$ eine durch **
@@ -103,18 +115,31 @@ Verteilungsfunktion aus Zeile bei a: $ \alpha([\frac{x^3}{3}]_0^1 -[\frac{x^4}{4
 | | $12(\frac{x^3}{3} -\frac{x^4}{4}) $ |für | $0<=x<=1$
 | | 1 |für |$x>1$|
 
+TODO: Erwartungswert E(X) bestimmen!
+
 (c) **Skizzieren Sie die Graphen der Dichte- und der Verteilungsfunktion.**
 ![Plot](Plot4.4c.jpg)
 
 (d) **Berechnen Sie $P(X <\frac{1}{2})$ und $P(X < E(X))$.**
-
+TODO: Berechnen
 ## Aufgabe 4.5
 **Die  ausfallfreie  Arbeitszeit $X$ (in  Zeiteinheiten)  einer  Art von Computerbauteilen hat die folgende Verteilungsfunktion $F(t)$:**
 
 |  $F(t)=$  | $0$ für $t <0$ |
 | --- | ---: |
-| | $1-e0^{0,5t}$ für $t>=0$|
+| | $1-e^{-0,5t}$ für $t>=0$|
 
-(a)  **Bestimmen Sie die Wahrscheinlichkeit dafur, dass ein solches Bauteil mindestens eine Zeiteinheit ohne Ausfall arbeitet.**
+(a)  **Bestimmen Sie die Wahrscheinlichkeit dafür, dass ein solches Bauteil mindestens eine Zeiteinheit ohne Ausfall arbeitet.**
+$P(X>=1) = 1- P(X<1) = 1 - (P(X<=1)-P(X=1)) =$
+$1- F(1) = $
 
 (b) **Bestimmen  Sie  die  zugehörige  Dichtefunktion $f(x)$ der  Verteilungsfunktion $F$ und die mittlere ausfallfreie Arbeitszeit.**
+
+$f(t) = F'(t)$
+$f(t) = 0,5 e^{-0,5t}$
+
+|  $f(t)=$  | $0$ für $t <0$ |
+| --- | ---: |
+| | $0,5 e^{-0,5t}$ für $t>=0$|
+
+TODO: "mittlere ausfallfreie Arbeitszeit"
