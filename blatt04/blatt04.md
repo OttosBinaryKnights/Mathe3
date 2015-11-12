@@ -1,4 +1,7 @@
 # Übung 4
+
+Erwartungswert:
+$$E(x) = $$
 ## Aufgabe 4.1
 **Gegeben sei eine Funktion $f:R \rightarrow R$ mit**
 
@@ -52,12 +55,27 @@ $E(X) = \int_0^\infty (1-F(x))dx - \int_{-\infty}^0 F(x)dx = $
 **Gegeben sei eine Funktion $f: R \rightarrow R$ mit
 $$f(x) =\frac{1}{\pi(1 +x^2)}$$**
 **(a) Zeigen Sie, dass $f$ Dichtefunktion einer Verteilungsfunktion ist (Hilfreich konnte die Aufgabe 7.4 aus Mathematik II des letzten Semesters sein.).**
+$$F(x) =\frac{1}{\pi} arctan(x)$$**
 
-TODO: Zeigen das f eine Dichtefunktion ist
+$\int_{-\infty}^{\infty} f(x)dx =
+[\frac{1}{\pi} arctan(x)]_{-\infty}^{\infty} = $
+LIMES FEHLT
+$= = 1$
+
+-> ja Dichtefunktion
 
 **(b)  Bestimmen Sie die Verteilungsfunktion und skizzieren Sie den Graphen der Verteilungsfunktion.**
 
-TODO: Verteilungsfunktions bestimmen und skizzieren
+$F(t) =
+[\frac{1}{\pi} arctan(x)]_{-\infty}^{t} =
+\frac{1}{\pi} lim_{a \rightarrow -\infty} [arctan(x)]_a^t=$
+$=\frac{1}{\pi} lim_{a \rightarrow -\infty} (arctan(t)-arctan(a))$
+$=\frac1\pi (arctan(t)-\frac{\pi}{2})$
+$=\frac1\pi arctan(t)-\frac12$
+
+![](Plot4.2.jpg)
+
+-> Hierfür gäbe es gibt keinen Erwartungswert
 
 ## Aufgabe 4.3
 **Die Lebensdauer $X$ (in Zeiteinheiten) eines Speichermedium seines Computers kann durch die Dichtefunktion **
