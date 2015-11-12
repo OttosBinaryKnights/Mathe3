@@ -104,7 +104,7 @@ Verteilungsfunktion aus Zeile bei a: $ \alpha([\frac{x^3}{3}]_0^1 -[\frac{x^4}{4
 | | 1 |für |$x>1$|
 
 (c) **Skizzieren Sie die Graphen der Dichte- und der Verteilungsfunktion.**
-![Plot](4.4c.jpg)
+![Plot](Plot4.4c.jpg)
 
 (d) **Berechnen Sie $P(X <\frac{1}{2})$ und $P(X < E(X))$.**
 
