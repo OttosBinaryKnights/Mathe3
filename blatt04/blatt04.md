@@ -97,7 +97,7 @@ $$ e^{-0.02 x^3} = 0.9$$
 $$ -0.02 x^3 = ln(0.9)$$
 $$ x^3 = -ln(0.9) / 0.02$$
 $$ x = \sqrt[3]{-ln(0.9) / 0.02}$$
-$$ x_1 = 1.74$$
+$$ x_1 = 1.74; x_{2,3}\text{ n.d. in R }$$
 
 
 ## Aufgabe 4.4
@@ -135,7 +135,13 @@ Verteilungsfunktion aus Zeile bei a: $ \alpha([\frac{x^3}{3}]_0^1 -[\frac{x^4}{4
 $E(X) = \int $
 TODO: Erwartungswert E(X) bestimmen!
 
-Median bei F(x) = 1/2
+*Median bei F(x) = 1/2:*
+
+$$12x^3(\frac{1}{3} -\frac{x}{4}) = 0.5$$
+$$x_1 = 0.613272$$
+$$x_2 = 1.24748 \text{(nicht im Intervall)}$$
+$$ x_{3,4} \text{ n.d. in R}$$
+$$ \rightarrow\text{ Median bei }x=0.613272$$
 
 (c) **Skizzieren Sie die Graphen der Dichte- und der Verteilungsfunktion.**
 ![Plot](Plot4.4c.jpg)
