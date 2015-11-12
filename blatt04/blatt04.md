@@ -5,6 +5,10 @@
 |f(x) = | $1 - | x - 1|$ | für $-1 <= x <= 1$
 | --- | --- |
 | | $0$ | **sonst** |
+
+*Ideen:*
+f(x) ist für x<0 negativ, somit keine gültige Dichtefunktion!
+
 (a) **Zeigen Sie, dass $f$ Dichtefunktion einer Verteilungsfunktion ist.**
 
 Eigenschaften einer Verteilungsfunktion:
@@ -34,7 +38,7 @@ $$ \rightarrow F(X)\text{ monoton steigend}$$
 \int_{-1}^{0} f(x) + \int_{0}^{1} f(x) = $
 
   $= \int_{-1}^{0} f(x) dx+ \int_{0}^{1} f(x) dx=
- \int_{-1}^{0} (x)dx + \int_{0}^{1} (-x+2) dx =$
+ \int_{-1}^{0} (1+(x-1))dx + \int_{0}^{1} (-x+2) dx =$
 
  $= [0,5 x^2]_{-1}^0 + [-0,5x^2+2x]_0^1 =$
 
@@ -66,22 +70,35 @@ TODO: Verteilungsfunktions bestimmen und skizzieren
 
 **(a)  Bestimmen Sie die Verteilungsfunktion von X.**
 
-$F(X) = \int_{-\infty}^x f(x) dx = [-e^{-0.02 x^3}]$
+$F(X) = \int_{-\infty}^x f(x) dx $
+
+für x>0:
+ $ \int_{0}^x f(x) dx =[-e^{-0.02 x^3}]_{0}^x = -e^{-0.02 x^3} + e^0 = 1 -e^{-0.02 x^3}$
 
 TODO: Prüfen und Rechenweg einfügen
 
 | $F(x) =$ | $0$ | für $x <=0$|
 | --- | --- |
-|   | $-e^{-0.02 x^3}$ |für $x >0$ |
+|   | $1-e^{-0.02 x^3}$ |für $x >0$ |
 
 **(b)  Wie  groß  ist  die  Wahrscheinlichkeit  dafür,  dass  ein  solches  Bauelement mindestens 2 Zeiteinheiten ausfallfrei arbeitet?**
 
-$P (X > 2) = 1- F(2) = 1- \int_{-\infty}^2f(x)dx = 1- 0 + \int_{0}^2f(x)dx =$
-$= 1-(-e^{-0.02 *2^3} -(-e^{-0.02 *0^3}) )= 1-(-e^{-0,16} + e^0) = e^{-0,16} \approx 0,852 $
+$P (X >= 2) = 1- P(X<2) = 1-P(X<=2) =$
+$=1 - F(2) = $
+$= 1-(1-e^{ -0.02 *2^3} )=
+1-(1-e^{-0,16} ) = e^{-0,16} \approx 0,852 $
 
 **(c)  Welche Zeit überleben ungefähr 90% der Bauelemente?**
 
-TODO: Zeit berechnen
+$P(X>=x) = 0.9$
+
+$1- F(x) = 1- (1-e^{-0.02 x^3}) = e^{-0.02 x^3} =0.9$
+$$ e^{-0.02 x^3} = 0.9$$
+$$ -0.02 x^3 = ln(0.9)$$
+$$ x^3 = -ln(0.9) / 0.02$$
+$$ x = \sqrt[3]{-ln(0.9) / 0.02}$$
+$$ x_1 = 1.74$$
+
 
 ## Aufgabe 4.4
 **Es sei $f$ eine durch **
@@ -115,7 +132,10 @@ Verteilungsfunktion aus Zeile bei a: $ \alpha([\frac{x^3}{3}]_0^1 -[\frac{x^4}{4
 | | $12(\frac{x^3}{3} -\frac{x^4}{4}) $ |für | $0<=x<=1$
 | | 1 |für |$x>1$|
 
+$E(X) = \int $
 TODO: Erwartungswert E(X) bestimmen!
+
+Median bei F(x) = 1/2
 
 (c) **Skizzieren Sie die Graphen der Dichte- und der Verteilungsfunktion.**
 ![Plot](Plot4.4c.jpg)
@@ -131,15 +151,35 @@ TODO: Berechnen
 
 (a)  **Bestimmen Sie die Wahrscheinlichkeit dafür, dass ein solches Bauteil mindestens eine Zeiteinheit ohne Ausfall arbeitet.**
 $P(X>=1) = 1- P(X<1) = 1 - (P(X<=1)-P(X=1)) =$
-$1- F(1) = $
+$1- F(1) = 1 - e^{-0,5} = 1 - 0.303 ... \approx 0.697$
 
 (b) **Bestimmen  Sie  die  zugehörige  Dichtefunktion $f(x)$ der  Verteilungsfunktion $F$ und die mittlere ausfallfreie Arbeitszeit.**
 
-$f(t) = F'(t)$
-$f(t) = 0,5 e^{-0,5t}$
+$f(t) = F'(t) = 0,5 e^{-0,5t}$
 
 |  $f(t)=$  | $0$ für $t <0$ |
 | --- | ---: |
 | | $0,5 e^{-0,5t}$ für $t>=0$|
 
-TODO: "mittlere ausfallfreie Arbeitszeit"
+TODO: "mittlere ausfallfreie Arbeitszeit" BZW Fehler finden
+
+$E(X) = \int_{-\infty}^{\infty}t*f(t) dt = 0 +\int_{0}^{\infty}t*f(t) dt $
+
+$\int t*0,5 e^{-0,5t} dt =
+0,5 \int t*e^{-0,5t}dt =$
+
+*partielle Integration*
+$$ u = 0,5*t; v' = e^{-0,5t}$$
+$$ u' = 0,5; v = -0,5*e^{-0,5t}$$
+
+$$\int u v' = uv - \int u'v$$
+$
+[0,5*t * (-0,5)*e^{-0,5t}] - \int(0,5*(-0,5)*e^{-0,5t})=$
+$[-0.25t*e^{-0,5t}]-[-0.5 e^{-0.5t}]$
+
+$E(X) = [-0.25t*e^{-0.5t}]_{0}^{\infty}-[-0.5 e^{-0.5t}]_{0}^{\infty} =$
+
+$=lim_{t \rightarrow \infty} (-0.25t*e^{-0,5t}+0.5 e^{-0.5t}) = ?$
+
+es sollte rauskommen:
+$=2$
