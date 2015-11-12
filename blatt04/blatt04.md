@@ -13,7 +13,7 @@ Eigenschaften einer Verteilungsfunktion:
  3. $lim_{x \rightarrow- \infty} F(x)=0$ und $lim_{x \rightarrow \infty} F(x)=1$
 
 *Idee: *
-Da Dichtefunktion Integral einer Verteilungsfunktion $F(X)$ ist müssen diese Kriterien auf das Integral von $\int f(x)=F(X)$ zutreffen.
+Da Integral Dichtefunktion die Verteilungsfunktion $F(X)$ ist müssen diese Kriterien auf das Integral von $\int f(x)=F(X)$ zutreffen.
 
 *z.z. F(X) monoton steigend*
 
@@ -45,13 +45,68 @@ $$ \rightarrow F(X)\text{ monoton steigend}$$
 $E(X) = \int_0^\infty (1-F(x))dx - \int_{-\infty}^0 F(x)dx = $
 
 ## Aufgabe 4.2
-**Gegeben sei eine Funktionf:R!Rmitf(x) =1(1 +x2):(a)  Zeigen Sie, dassfDichtefunktion einer Verteilungsfunktion ist (Hilf-reich konnte die Aufgabe 7.4 aus Mathematik II des letzten Semesterssein.).(b)  Bestimmen Sie die Verteilungsfunktion und skizzieren Sie den Graphender Verteilungsfunktion.**
+**Gegeben sei eine Funktion $f: R \rightarrow R$ mit
+$$f(x) =\frac{1}{\pi(1 +x^2)}$$**
+**(a) Zeigen Sie, dass $f$ Dichtefunktion einer Verteilungsfunktion ist (Hilfreich konnte die Aufgabe 7.4 aus Mathematik II des letzten Semesters sein.).**
 
-##Aufgabe 4.3
-**Die LebensdauerX(in Zeiteinheiten) eines Speichermediumseines Computers kann durch die Dichtefunktionf(x) =(0furx00;06x2e0;02x3furx >0beschrieben werden.(a)  Bestimmen Sie die Verteilungsfunktion vonX.(b)  Wie  gro  ist  die  Wahrscheinlichkeit  dafur,  dass  ein  solches  Bauele-ment mindestens 2 Zeiteinheiten ausfallfrei arbeitet?(c)  Welche Zeituberleben ungefahr90%der Bauelemente?**
+**(b)  Bestimmen Sie die Verteilungsfunktion und skizzieren Sie den Graphen der Verteilungsfunktion.**
+
+## Aufgabe 4.3
+**Die Lebensdauer $X$ (in Zeiteinheiten) eines Speichermedium seines Computers kann durch die Dichtefunktion **
+
+| $f(x) =$ | $0$ | für $x <=0$|
+| --- | --- |
+|   | $0,06x^2e^{-0,02x^3}$ |für $x >0$ |
+
+**beschrieben werden.**
+
+**(a)  Bestimmen Sie die Verteilungsfunktion von X.**
+
+$F(X) = \int_{-\infty}^x f(x) dx = [-e^{-0.02 x^3}]$
+
+**(b)  Wie  groß  ist  die  Wahrscheinlichkeit  dafür,  dass  ein  solches  Bauelement mindestens 2 Zeiteinheiten ausfallfrei arbeitet?**
+
+$P (X > 2) = 1- F(2) = 1- \int_{-\infty}^2f(x)dx = 1- 0 + \int_{0}^2f(x)dx =$
+$= 1-(-e^{-0.02 *2^3} -(-e^{-0.02 *0^3}) )= 1-(-e^{-0,16} + e^0) = e^{-0,16} \approx 0,852 $
+
+**(c)  Welche Zeit überleben ungefähr 90% der Bauelemente?**
 
 ## Aufgabe 4.4
-**Es sei $f$ eine durch $f(x) =(x2(1x)$fur0x10fur1< x <0und1< x <1gegebene Funktion mit2R.(a)  Bestimmen Sieso, dassfdie Dichtefunktion einer stetigen Zufalls-groeXist.(b)  Ermittlen Sie die Verteilungsfunktion und den ErwartungswertE(X).(c)  Skizzieren Sie die Graphen der Dichte- und der Verteilungsfunktion.(d)  Berechnen SieP(X <12)undP(X < E(X)).**
+**Es sei $f$ eine durch **
+
+| $f(x) =$ | $\alpha x^2(1-x)$ |für | $0<=x<=1$
+| --- |
+| | 0 |für |$-\infty < x <0$ und $1< x <\infty$|
+
+** gegebene Funktion mit $\alpha \in R$. **
+
+(a) **Bestimmen Sie $\alpha$ so, dass $f$ die Dichtefunktion einer stetigen Zufallsgröße ist.**
+
+Gesucht $\alpha$ für: $\int_{-\infty}^{\infty} f(x) dx = \int_0^1 f(x) dx = 1$
+
+$\int_0^1 (\alpha x^2(1-x)) dx =
+\alpha \int_0^1  x^2(1-x) dx =
+\alpha \int_0^1  (x^2-x^3) dx =
+\alpha( \int_0^1  x^2dx-\int_0^1 x^3 dx )=$
+$ =\alpha([\frac{x^3}{3}]_0^1 -[\frac{x^4}{4}]_0^1) =
+\alpha (\frac13 - \frac14) = \alpha \frac{1}{12}$
+$$\rightarrow \alpha = 12$$
+
+
+
+(b) **Ermittlen Sie die Verteilungsfunktion und den Erwartungswert E(X).**
+
+Verteilungsfunktion aus Zeile bei a: $ \alpha([\frac{x^3}{3}]_0^1 -[\frac{x^4}{4}]_0^1) $
+
+| $F(x) =$ | $0$ |für | $0<x$
+| --- |
+| | $12(\frac{x^3}{3} -\frac{x^4}{4}) $ |für | $0<=x<=1$
+| | 1 |für |$x>1$|
+
+(c) **Skizzieren Sie die Graphen der Dichte- und der Verteilungsfunktion.**
+![Plot](4.4c.jpg)
+
+(d) **Berechnen Sie $P(X <\frac{1}{2})$ und $P(X < E(X))$.**
 
 ## Aufgabe 4.5
 **Die  ausfallfreie  Arbeitszeit $X$ (in  Zeiteinheiten)  einer  Art von Computerbauteilen hat die folgende Verteilungsfunktion $F(t)$:**
