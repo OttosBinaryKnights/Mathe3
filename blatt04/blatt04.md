@@ -76,9 +76,9 @@ $= -e^{-0.02 x^3} + e^0 = 1 -e^{-0.02 x^3}$
 
 
 
-| $F(x) =$ | $0$ | für $x <=0$|
+| $F(x) =$ | $0$ | für $t <=0$|
 | --- | --- |
-|   | $1-e^{-0.02 x^3}$ |für $x >0$ |
+|   | $1-e^{-0.02 t^3}$ |für $t >0$ |
 
 **(b)  Wie  groß  ist  die  Wahrscheinlichkeit  dafür,  dass  ein  solches  Bauelement mindestens 2 Zeiteinheiten ausfallfrei arbeitet?**
 
@@ -131,7 +131,7 @@ Verteilungsfunktion aus Zeile bei a: $ \alpha([\frac{x^3}{3}]_0^1 -[\frac{x^4}{4
 
 | $F(t) =$ | $0$ |für | $0<t$
 | --- |
-| | $4x^3 -3x^4 $ |für | $0<=t<=1$
+| | $4t^3 -3t^4 $ |für | $0<=t<=1$
 | | 1 |für |$t>1$|
 
 $E(X) = \int_{-\infty}^{\infty} x f(x) dx $
@@ -140,23 +140,19 @@ $= 12[\frac14 x^4- \frac15x^5]_{0}^{1}$
 $= \frac35$
 
 
-*Median bei F(x) = 1/2:*
-
-$$12x^3(\frac{1}{3} -\frac{x}{4}) = 0.5$$
-$$x_1 = 0.613272$$
-$$x_2 = 1.24748 \text{(nicht im Intervall)}$$
-$$ x_{3,4} \text{ n.d. in R}$$
+*Median wäre
 $$ \rightarrow\text{ Median bei }x=0.613272$$
 
 (c) **Skizzieren Sie die Graphen der Dichte- und der Verteilungsfunktion.**
 ![Plot](Plot4.4c.jpg)
+Funktionen in 2 getrennten Graphen wegen der Achsenbeschriftung
 
 (d) **Berechnen Sie $P(X <\frac{1}{2})$ und $P(X < E(X))$.**
 
-$P(X <\frac{1}{2}) = \int_{0}^{0.5}12x^2(1-x)dx =\frac5{16}$
+$P(X <\frac{1}{2}) = \int_{0}^{0.5}12x^2(1-x)dx =\frac5{16} = F(0,5)$
 
 
-$P(X < E(X)) = \int_0^{\frac35} 12x^2(1-x)dx = 0.4752$
+$P(X < E(X)) = \int_0^{\frac35} 12x^2(1-x)dx = 0.4752 = F(\frac35)$
 
 ## Aufgabe 4.5
 **Die  ausfallfreie  Arbeitszeit $X$ (in  Zeiteinheiten)  einer  Art von Computerbauteilen hat die folgende Verteilungsfunktion $F(t)$:**
