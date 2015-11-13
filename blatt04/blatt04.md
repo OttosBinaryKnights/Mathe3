@@ -38,8 +38,8 @@ $F(t) =
 [\frac{1}{\pi} arctan(x)]_{-\infty}^{t} =
 \frac{1}{\pi} lim_{a \rightarrow -\infty} [arctan(x)]_a^t=$
 $=\frac{1}{\pi} lim_{a \rightarrow -\infty} (arctan(t)-arctan(a))$
-$=\frac1\pi (arctan(t)-\frac{\pi}{2})$
-$=\frac1\pi arctan(t)-\frac12$
+$=\frac1\pi (arctan(t)+\frac{\pi}{2})$
+$=\frac1\pi arctan(t)+\frac12$
 
 ![](Plot4.2.jpg)
 
