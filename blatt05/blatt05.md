@@ -47,6 +47,7 @@ $= \int_0^1 (x - \frac35)^2 (4x^3 -3x^4) dx$
 $= [-\frac{3x^7}{7} + \frac{3x^6}{5} + \frac{73x^5}{125}  - \frac{6x^4}{5} + + \frac{12x^3}{25}]_0^1$
 $= 0.035..$
 
+---
 ## Aufgabe 5.2
 **Wir  führen  das  Experiment  durch  "Dreimal  hintereinander eine Münze werfen". Wir definieren zwei Zufallsvariablen $X$ und $Y$ zu diesem Zufallsexperiment wie folgt:**
 
@@ -58,16 +59,39 @@ $= 0.035..$
 
 **Bestimmen Sie Erwartungswert und Varianz von $X;Y;X+Y$ sowie $XY$.**
 
+| $X=$ | $0$ | $1$ |
+| --- | --- |
+|  | $\frac12$ | $\frac12$ |
+
+$E(X)=0.5 * 0 + 0.5 * 1 = 0.5$
+
+| $Y=$ | $0$ | $1$ | $2$ | $3$ |
+| --- | --- |
+|  | $\frac18$ | $\frac38$ | $\frac38$ | $\frac18$ |
+
+$E(Y)=\frac38 + 2 * \frac38 + 3*\frac18 $
+$= 4 * \frac38 $
+$=1.5$
+
 ## Aufgabe 5.3
-**Ein  Computerhersteller  erhalt  regelmaig  Lieferungen,  dieaus  jeweilsN= 100Erzeugnissen  bestehen.  Aus  statistischen  Unterlagengeht hervor, dass die Zahl der in einer Lieferung enthaltenen Ausschussstuckeeine  Zufallsvariable  ist,  die  binomialverteilt  ist  mit  den  Parameternn= 2undp= 0;1.  Einer  Lieferung  mit  unbekanntem  Ausschussanteil  werdenm= 10Qualitatskontrollproben  entnommen.  Die  gesamte  Lieferung  wirdnur dann angenommen, wenn allem= 10Erzeugnisse qualitatsgerecht sind.**
-(a)  **Wie  gro  ist  die  Wahrscheinlichkeit  dafur,  dass  eine  Lieferungk=0;1;2Ausschussstucke enthalt?**
-(b)  **Bestimmen Sie die Wahrscheinlichkeit dafur, dass eine Lieferung an-genommen wird.**
-(c)  **Wie viel Sendungen muss der Computerhersteller durchschnittlich erhalten, damit insgesamt ein Ausschussstuck erwartet werden muss?**
+**Ein  Computerhersteller  erhält  regelmäßig  Lieferungen,  die aus  jeweils $N= 100$ Erzeugnissen  bestehen.  Aus  statistischen  Unterlagen geht hervor, dass die Zahl der in einer Lieferung enthaltenen Ausschussstücke eine  Zufallsvariable  ist,  die  binomialverteilt  ist  mit  den  Parametern $n= 2$ und $p= 0.1$.  Einer  Lieferung  mit  unbekanntem  Ausschussanteil  werden $m= 10$ Qualitatskontrollproben  entnommen.  Die  gesamte  Lieferung  wird nur dann angenommen, wenn alle $m= 10$ Erzeugnisse qualitätsgerecht sind.**
+
+(a)  **Wie  groß  ist  die  Wahrscheinlichkeit  dafür,  dass  eine  Lieferung $k=0,1,2$ Ausschussstücke enthält?**
+
+(b)  **Bestimmen Sie die Wahrscheinlichkeit dafür, dass eine Lieferung angenommen wird.**
+
+(c)  **Wie viel Sendungen muss der Computerhersteller durchschnittlich erhalten, damit insgesamt ein Ausschussstück erwartet werden muss?**
 
 ## Aufgabe 5.4
-**In einer Werkstatt einer Computerrma unterliege die zufalligeReparaturzeit  eines  Computers  einer  Exponentialverteilung  mit  dem  Para-meter= 0;5.
-(a)  Bestimmen  Sie  die  Wahrscheinlichkeit  dafur,  dass  zur  Reparatur  ei-nes  beliebigen  Computers  mindestens  3  Stunden  aufgewendet  werdenmussen.
-(b)  Wie viele Stunden werden im Durchschnitt zur Reparatur eines Com-puters benotigt?
+**In einer Werkstatt einer Computerfirma unterliege die zufällige Reparaturzeit  eines  Computers  einer  Exponentialverteilung  mit  dem  Parameter $\lambda= 0.5$.**
+
+(a)  **Bestimmen  Sie  die  Wahrscheinlichkeit  dafur,  dass  zur  Reparatur  eines  beliebigen  Computers  mindestens  3  Stunden  aufgewendet  werden müssen.**
+
+(b) **Wie viele Stunden werden im Durchschnitt zur Reparatur eines Computers benötigt?**
 
 ## Aufgabe 5.5
-**Die  Breite  des  Controllers  auf  einem  USB-StickXin  mmlasst  sich  als  Zufallsvariable  auassen.Xsei  normalverteilt  und  habe  denMittelwert= 10mm und die Standardabweichung= 0;02mm.(a)  Wieviel Prozent Ausschuss sind zu erwarten, wenn die Breite um ma-ximal0;03mm vom Sollwert10mm abweichen soll?(b)  Wie  mussen  die  Toleranzgrenzen10cund10 +cgewahlt  werden,damit nicht mehr als5%Ausschuss entstehen?**
+**Die  Breite  des  Controllers  auf  einem  USB-StickXin  mmlasst  sich  als  Zufallsvariable  auassen.Xsei  normalverteilt  und  habe  den Mittelwert= 10mm und die Standardabweichung $\sigma = 0.02mm$.**
+
+(a) **Wieviel Prozent Ausschuss sind zu erwarten, wenn die Breite um maximal $+/-0.03mm$ vom Sollwert $10mm$ abweichen soll?**
+
+(b) **Wie  mussen  die  Toleranzgrenzen $10-c$ und $10 +c$ gewählt  werden, damit nicht mehr als 5% Ausschuss entstehen?**
