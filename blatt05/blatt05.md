@@ -3,7 +3,7 @@
  (a) **Ermitteln  Sie  Erwartungswert  und  Varianz  zu  den  Aufgaben  2.5 sowie 3.4 und 3.5.**
 
 
- | aus  Aufg 2.5    |   $0$ |  $1$  |  $2$  |  $3$  |
+ | aus  [Aufg 2.5](https://github.com/OttosBinaryKnights/Mathe3/blob/master/blatt02.pdf)    |   $0$ |  $1$  |  $2$  |  $3$  |
  | ------------ | :---: | :---: | :---: | :---: |
  | $P(X = x_i)$ | 0,024 | 0,188 | 0,452 | 0,336 |
 
@@ -13,7 +13,7 @@
 
  ---
 
- aus  Aufg. 3.4|  0  |  1  |   2  |  3  |  4  |  >4
+ aus  [Aufg. 3.4](https://github.com/OttosBinaryKnights/Mathe3/blob/master/blatt03.pdf)|  0  |  1  |   2  |  3  |  4  |  >4
   :---          |:---:|
  $P(X=x_i)$      | 0,5 | 0,2 | 0,1  | 0,1 | 0,1 | 0
 
@@ -22,7 +22,7 @@
  $Var(X) = 14.05$
 
 ---
- aus  Aufg. 3.5|  2  |  1  |   0  |
+ aus  [Aufg. 3.5](https://github.com/OttosBinaryKnights/Mathe3/blob/master/blatt03.pdf)|  2  |  1  |   0  |
   :---                 |:---:|
  $P(X=x_i)$            | 0,72| 0,26 | 0,02
 
@@ -30,9 +30,22 @@
 
  $Var(X) = 3.3872$
 
+---
  (b) **Bestimmen Sie die Varianz zu den Aufgaben 4.1 und 4.4**
 
+*aus [Lösung 4.1](https://github.com/OttosBinaryKnights/Mathe3/blob/master/blatt04.pdf)*:
+Keine Dichtefunktion, daher kein Erwartungswert, also auch keine Varianz
+
 ---
+*aus [Lösung 4.4](https://github.com/OttosBinaryKnights/Mathe3/blob/master/blatt04.pdf)*:
+
+$E(X) = \mu = \frac35$
+
+$Var(x) = \int (x - \mu)^2 f(x) dx$
+$= \int_0^1 (x - \frac35)^2 (4x^3 -3x^4) dx$
+$= \int_0^1 (x - \frac35)^2 (4x^3 -3x^4) dx$
+$= [-\frac{3x^7}{7} + \frac{3x^6}{5} + \frac{73x^5}{125}  - \frac{6x^4}{5} + + \frac{12x^3}{25}]_0^1$
+$= 0.035..$
 
 ## Aufgabe 5.2
 **Wir  führen  das  Experiment  durch  "Dreimal  hintereinander eine Münze werfen". Wir definieren zwei Zufallsvariablen $X$ und $Y$ zu diesem Zufallsexperiment wie folgt:**
