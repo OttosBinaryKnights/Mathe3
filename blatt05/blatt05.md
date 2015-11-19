@@ -9,7 +9,8 @@
 
  $E(X) = 0.188 + 0.904 + 1.008 = 2.19$
 
- $Var(X) = (0-2.19)^2 +(1-2.19)^2 +(2-2.19)^2 +(3-2.19)^2 = 6.9044$
+ $Var(X) = (0-2.19)^2 * 0.024 + (1-2.19)^2 * 0.188 +(2-2.19)^2 * 0.452 + (3-2.19)^2 * 0.336$
+ $=$ ___
 
  ---
 
@@ -19,7 +20,7 @@
 
  $E(X) = 0.2 + 0.2 + 0.3 + 0.4 = 1.1$
 
- $Var(X) = 14.05$
+ $Var(X) = $___
 
 ---
  aus  [Aufg. 3.5](https://github.com/OttosBinaryKnights/Mathe3/blob/master/blatt03.pdf)|  2  |  1  |   0  |
@@ -28,7 +29,7 @@
 
  $E(X) = 1.42 + 0.26 = 1.68$
 
- $Var(X) = 3.3872$
+ $Var(X) = $___
 
 ---
  (b) **Bestimmen Sie die Varianz zu den Aufgaben 4.1 und 4.4**
@@ -55,6 +56,8 @@ $= 0.035..$
 | --- | --- |
 |  | $1$ **sonst** |
 
+Varianz: $\sum(X-\mu)*P(X)$ oder $E(X^2)-E(X)^2$
+
 **und $Y=$"Anzahl Würfe, die "Kopf" zeigen".**
 
 **Bestimmen Sie Erwartungswert und Varianz von $X;Y;X+Y$ sowie $XY$.**
@@ -63,7 +66,9 @@ $= 0.035..$
 | --- | --- |
 |  | $\frac12$ | $\frac12$ |
 
-$E(X)=0.5 * 0 + 0.5 * 1 = 0.5$
+$E(X) = 0.5 * 0 + 0.5 * 1 = 0.5$
+
+$Var(X) = (0-0.5)^2*0.5 + (1-0.5)^2*0.5 = 0.25$
 
 | $Y=$ | $0$ | $1$ | $2$ | $3$ |
 | --- | --- |
@@ -72,6 +77,34 @@ $E(X)=0.5 * 0 + 0.5 * 1 = 0.5$
 $E(Y)=\frac38 + 2 * \frac38 + 3*\frac18 $
 $= 4 * \frac38 $
 $=1.5$
+
+$Var(Y)=\sum (x-\mu)^2 P(Y=x_i) = 0.75$
+
+| $X=$ | $0$ | $0$ |$0$ |$0$ | $1$ | $1$ | $1$ | $1$ |
+| --- | --- |
+| $Y=$ | $0$ | $1$ | $2$ | $3$ | $0$ | $1$ | $2$ | $3$ |
+| $X*Y$ | 0 | 0 | 0 | 0 | 0 | 1 | 2 | 3 |
+| | $0$ | $\frac1{8}$ | $\frac2{8}$ | $\frac1{8}$ | $\frac1{8}$ | $\frac2{8}$ | $\frac1{8}$ | $0$ |
+
+$E(XY)= \frac2{8} + 2*\frac1{8} $
+$= \frac1{2}$
+
+$Var(XY)$
+$= \sum(XY-\mu)*P(XY)$
+$= 0.5$
+
+---
+
+$COV(X,Y) = E(X*Y) - E(X) * E(Y)$
+$= 0.5 - 0.75 = -0.25$
+
+*Gibts eine Vorraussetzung bzgl der Abhängigkeiten?*
+
+$E(X+Y)=E(X)+E(Y)=0.5+1.5=2$
+
+$Var(X+Y) = Var(X) + 2*COV(X,Y) + Var(Y)$
+$= 0.25 + 2-(-0.25)+0.75$
+$= 0.5$
 
 ## Aufgabe 5.3
 **Ein  Computerhersteller  erhält  regelmäßig  Lieferungen,  die aus  jeweils $N= 100$ Erzeugnissen  bestehen.  Aus  statistischen  Unterlagen geht hervor, dass die Zahl der in einer Lieferung enthaltenen Ausschussstücke eine  Zufallsvariable  ist,  die  binomialverteilt  ist  mit  den  Parametern $n= 2$ und $p= 0.1$.  Einer  Lieferung  mit  unbekanntem  Ausschussanteil  werden $m= 10$ Qualitatskontrollproben  entnommen.  Die  gesamte  Lieferung  wird nur dann angenommen, wenn alle $m= 10$ Erzeugnisse qualitätsgerecht sind.**
