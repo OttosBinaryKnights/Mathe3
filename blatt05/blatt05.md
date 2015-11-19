@@ -78,6 +78,17 @@ $=1.5$
 
 (a)  **Wie  groß  ist  die  Wahrscheinlichkeit  dafür,  dass  eine  Lieferung $k=0,1,2$ Ausschussstücke enthält?**
 
+
+$$P(E)= \begin{pmatrix} n \\ k  \end{pmatrix} * p^k q^{n-k}$$
+
+$P(2) = \begin{pmatrix} 2 \\ 2  \end{pmatrix} * 0.1^2 0.9^0 = 0.01$
+
+$P(1) = \begin{pmatrix} 2 \\ 1  \end{pmatrix} * 0.1^1 0.9^1 = 0.18$
+
+$P(0) = \begin{pmatrix} 2 \\ 0  \end{pmatrix} * 0.1^0 0.9^2 = 0.81$
+
+sinnvoll??
+
 (b)  **Bestimmen Sie die Wahrscheinlichkeit dafür, dass eine Lieferung angenommen wird.**
 
 (c)  **Wie viel Sendungen muss der Computerhersteller durchschnittlich erhalten, damit insgesamt ein Ausschussstück erwartet werden muss?**
@@ -85,13 +96,34 @@ $=1.5$
 ## Aufgabe 5.4
 **In einer Werkstatt einer Computerfirma unterliege die zufällige Reparaturzeit  eines  Computers  einer  Exponentialverteilung  mit  dem  Parameter $\lambda= 0.5$.**
 
-(a)  **Bestimmen  Sie  die  Wahrscheinlichkeit  dafur,  dass  zur  Reparatur  eines  beliebigen  Computers  mindestens  3  Stunden  aufgewendet  werden müssen.**
+Das bedeutet laut [Wikipedia](https://de.wikipedia.org/wiki/Exponentialverteilung#Definition):
+$$ f(x) = \begin{cases}
+\lambda e^{-\lambda x} \text{ fur } x \geq 0 \\
+0 \text{ fur }x < 0
+\end{cases}$$
+
+$$ F(x) = \begin{cases}
+1- e^{-\lambda x} \text{ fur } x \geq 0 \\
+0 \text{ fur }x < 0
+\end{cases}$$
+
+$$ E(x) = \int_0^{\infty} \lambda x e^{-\lambda x} =
+ \frac1 \lambda$$
+
+(a)  **Bestimmen  Sie  die  Wahrscheinlichkeit  dafür,  dass  zur  Reparatur  eines  beliebigen  Computers  mindestens  3  Stunden  aufgewendet  werden müssen.**
+
+$F(X>=3) = 1- F(3) = 1- F(3)
+=1 - (1- e^{-\lambda x}) = e^{-0.5*3} = 0.2231...$
 
 (b) **Wie viele Stunden werden im Durchschnitt zur Reparatur eines Computers benötigt?**
 
+$ E(x) = \int_0^{\infty} \lambda x e^{-\lambda x} =
+ \frac1 \lambda = 2$
 ## Aufgabe 5.5
-**Die  Breite  des  Controllers  auf  einem  USB-StickXin  mmlasst  sich  als  Zufallsvariable  auassen.Xsei  normalverteilt  und  habe  den Mittelwert= 10mm und die Standardabweichung $\sigma = 0.02mm$.**
+**Die  Breite  des  Controllers  auf  einem  USB-Stick *X* in  mm lässt  sich  als  Zufallsvariable  auffassen. $X$ sei  normalverteilt  und  habe  den Mittelwert= 10mm und die Standardabweichung $\sigma = 0.02mm$.**
 
 (a) **Wieviel Prozent Ausschuss sind zu erwarten, wenn die Breite um maximal $+/-0.03mm$ vom Sollwert $10mm$ abweichen soll?**
+
+Über Ungleichung von Tschebyschow zu lösen?
 
 (b) **Wie  mussen  die  Toleranzgrenzen $10-c$ und $10 +c$ gewählt  werden, damit nicht mehr als 5% Ausschuss entstehen?**
