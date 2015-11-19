@@ -122,8 +122,24 @@ $ E(x) = \int_0^{\infty} \lambda x e^{-\lambda x} =
 ## Aufgabe 5.5
 **Die  Breite  des  Controllers  auf  einem  USB-Stick *X* in  mm lässt  sich  als  Zufallsvariable  auffassen. $X$ sei  normalverteilt  und  habe  den Mittelwert= 10mm und die Standardabweichung $\sigma = 0.02mm$.**
 
+Diese Aufgabestellung ist offensichtlich sehr ähnlich zu  [Aufgabe 10c und d der Uni Stuttgart](http://www.uni-stuttgart.de/bio/adamek/numerik/uestat,loe,b2.pdf)
+
 (a) **Wieviel Prozent Ausschuss sind zu erwarten, wenn die Breite um maximal $+/-0.03mm$ vom Sollwert $10mm$ abweichen soll?**
 
 Über Ungleichung von Tschebyschow zu lösen?
 
+Lösung aus Stuttgart:
+
+$P(9.97 \leq X \leq 10.03)$
+$= \Phi(\frac{10.03-10.0}{0.02})-\Phi(\frac{9.97-10.0}{0.02})$
+$= \Phi(1.5) - \Phi(-1.5)$
+$= 0.8664$
+
+$$\rightarrow Ausschuss = 1- P(...) = 0.1336$$
+
 (b) **Wie  mussen  die  Toleranzgrenzen $10-c$ und $10 +c$ gewählt  werden, damit nicht mehr als 5% Ausschuss entstehen?**
+
+Lösung aus Stuttgart:
+
+Das Quantil der Standardnormalverteilung für 97.5% (beidseitig) ist 1.96. Daraus berechnen wir für das Quantil der Normalverteilung mit $\mu = 10$ und $\sigma = 0.02$ den Wert $10 + 1.96 * 0.02$.
+Die Grenzen sind also $10 - 0.039 \leq X \leq 10 + 0.039$.
