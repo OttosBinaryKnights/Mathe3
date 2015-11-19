@@ -91,8 +91,12 @@ sinnvoll??
 
 (b)  **Bestimmen Sie die Wahrscheinlichkeit dafür, dass eine Lieferung angenommen wird.**
 
+für den Fall $k=0$ 81%
+
 (c)  **Wie viel Sendungen muss der Computerhersteller durchschnittlich erhalten, damit insgesamt ein Ausschussstück erwartet werden muss?**
 
+$E(X) = n*p = 2*0.1 = 0.2$
+-> Durchschnittlich 5 Lieferungen erhalten
 ## Aufgabe 5.4
 **In einer Werkstatt einer Computerfirma unterliege die zufällige Reparaturzeit  eines  Computers  einer  Exponentialverteilung  mit  dem  Parameter $\lambda= 0.5$.**
 
