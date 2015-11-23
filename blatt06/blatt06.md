@@ -22,3 +22,6 @@ $P_{16}(X >= 20) = 1-F(19) = 1 - e^{-16} \sum_{k=0}^{19} \frac{16^{k}}{k!} \appr
 
 ## Aufgabe 6.4
 **Eine Lieferung von 60 USB-Sticks, die 8 fehlerhafte  Sticks enthält, wird einer Qualitätskontrolle unterzogen.  Hierzu werden 5 der  60 Sticks herausgegriffen und überpruft. Die Lieferung wird zurückgeschickt, wenn unter den 5 geprüften Sticks einer fehlerhaft ist. Ermitteln Sie mithilfe der Hypergeometrischen Verteilung, mit welcher  Wahrscheinlichkeit die Lieferung zurückgeschickt wird.**
+
+## Aufgabe 6.5
+**Ein Computernetz besteht aus 10 unabhängig voneinander arbeitenden Computern. Jeder dieser 10 Computer fällt in der Zeit T mit der Wahrscheinlichkeit $0.05$ aus. Mit  Hilfe der Ungleichung von Tschebyschewsoll die Wahrscheinlichkeit dafur abgeschätzt werden, dass der absolute Betrag der Differenz zwischen der Zahl der  ausgefallenen Computer und dem Erwartungswert dieser Zufallsvariablen groößer als 2 ist.**
