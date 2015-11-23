@@ -1,5 +1,21 @@
 # Übung 6
-## Aufgabe 6.1
+## Aufgabe 6.1 (wrsl falsch)
 **Die Länge $X$ (in mm) von Leiterplatten sei angenähert normalverteilt mit Erwartungswert $ \mu = 15$. Ermitteln Sie die Varianz, wenn $98%$ der Leiterplatten zwischen $14 mm$ und $16 mm$ lang sind.**
 
-$z= \frac{k-\mu}{\sigma}
+$z= \frac{k-\mu}{\sigma}$
+
+$\Phi(z) = 0.99 \rightarrow \text{ bei }z=2.33$
+
+$\sigma= \frac{k-\mu}{z} = \frac1{2.33} \approx 0.429$
+
+## Aufgabe 6.2
+
+## Aufgabe 6.3
+**In einem großen Netzwerk treten pro Tag im  Durchschnitt 16 Störungen auf. Man kann annehmen, dass die Anzahl der  Störungen *poissonverteilt* ist. Wie groß ist die Wahrscheinlichkeit, dass pro Tag mehr als 20 Störungen auftreten?**
+*Poissonverteilung:*
+$$P_\lambda(k) = \frac{ \lambda ^ k}{k!}e^{-\lambda}$$
+$$F(n) =e^{-\lambda} \sum_{k=0}^{n} \frac{\lambda^{k}}{k!}$$
+
+diskrete Werte:
+
+$P_{16}(X >= 20) = 1-F(19) = 1 - e^{-16} \sum_{k=0}^{19} \frac{16^{k}}{k!} \approx 0.188$
