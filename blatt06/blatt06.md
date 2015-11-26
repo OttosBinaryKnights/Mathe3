@@ -22,6 +22,16 @@ $\sigma^2= \frac1{2.33}^2 \approx 0.18 mm^2$
 
 ---
 ## Aufgabe 6.2
+$\mu = 200 \Omega$ (Erwartungswert)
+$\delta^2 = 5 \Omega^2$ Varianz $\rightarrow \delta = \sqrt{5} \Omega$
+
+a) $a=\mu -c = 200\Omega - 5\Omega = 195\Omega$
+
+   $b= \mu + c = 200 \Omega + 5\Omega = 205\Omega$
+
+   $a'=\frac{a-\mu}{\delta}=\frac{205 \Omega - 200\Omega}{\sqrt{5}}=\frac{5\Omega}{\sqrt{5}}$
+
+   $$
 
 ---
 ## Aufgabe 6.3
@@ -65,4 +75,26 @@ hy
 
 ---
 ## Aufgabe 6.5
-**Ein Computernetz besteht aus 10 unabhängig voneinander arbeitenden Computern. Jeder dieser 10 Computer fällt in der Zeit T mit der Wahrscheinlichkeit $0.05$ aus. Mit  Hilfe der Ungleichung von Tschebyschewsoll die Wahrscheinlichkeit dafur abgeschätzt werden, dass der absolute Betrag der Differenz zwischen der Zahl der  ausgefallenen Computer und dem Erwartungswert dieser Zufallsvariablen groößer als 2 ist.**
+**Ein Computernetz besteht aus 10 unabhängig voneinander arbeitenden Computern. Jeder dieser 10 Computer fällt in der Zeit T mit der Wahrscheinlichkeit $0.05$ aus. Mit  Hilfe der Ungleichung von Tschebyschew soll die Wahrscheinlichkeit dafür abgeschätzt werden, dass der absolute Betrag der Differenz zwischen der Zahl der  ausgefallenen Computer und dem Erwartungswert dieser Zufallsvariablen größer als 2 ist.**
+
+*Ungleichung von Tschebyschew:*
+$$P[|X - \mu| \geq k] \leq \frac{\sigma^2}{k^2}$$
+
+Gesucht: Abschätzung von P für $|X - \mu| > 2$
+
+Binomialverteilt, daher:
+
+$\mu = n*p = 10 * 0.05 = 0.5$
+
+Varianz:
+$\sigma^2 = n*p*q = 10*0.05*0.95=0.475$
+
+$P[|X - 0.5| \geq 2] \leq \frac{0.475}{2^2}$
+
+$P[|X - 0.5| \geq 2] \leq \frac{0.475}{4}$
+
+$P[|X - 0.5| \geq 2] \leq 0.11875$
+
+DA aber größer als 2 sein soll sollte gelten:
+(das ist nur eine Vermutung!)
+$P[|X - 0.5| > 2] < 0.11875$
