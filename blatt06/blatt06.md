@@ -22,16 +22,59 @@ $\sigma^2= \frac1{2.33}^2 \approx 0.18 mm^2$
 
 ---
 ## Aufgabe 6.2
-$\mu = 200 \Omega$ (Erwartungswert)
-$\delta^2 = 5 \Omega^2$ Varianz $\rightarrow \delta = \sqrt{5} \Omega$
+**Für den Gesamtwiderstand $R$ von elektronischen Computerbauteilen einer Lieferung gleicher Bauart wird der Erwartungswert mit $\mu = 200 \Omega$
+und die Varianz mit $\sigma^2 = 5 \Omega^2$
+angegeben.**
 
-a) $a=\mu -c = 200\Omega - 5\Omega = 195\Omega$
+* $\mu = 200 \Omega$ (Erwartungswert)
+* $\sigma^2 = 5 \Omega^2$ (Varianz)
+* $\rightarrow \sigma = \sqrt{5} \Omega$ (Standardabweichung)
+
+a) **Wie groß ist die  Wahrscheinlichkeit, dass ein  Bauteil fehlerhaft ist, wenn der Gesamtwiderstand $R$ der Computerbauteile maximal um $5 \Omega$ vom Sollwert abweichen darf?**
+
+  $a=\mu -c = 200\Omega - 5\Omega = 195\Omega$
 
    $b= \mu + c = 200 \Omega + 5\Omega = 205\Omega$
 
-   $a'=\frac{a-\mu}{\delta}=\frac{205 \Omega - 200\Omega}{\sqrt{5}}=\frac{5\Omega}{\sqrt{5}}$
+   $a'=\frac{a-\mu}{\delta}=\frac{195 \Omega - 200\Omega}{\sqrt{5}}=-\frac{5\Omega}{\sqrt{5}}$
 
-   $$
+   $b'=\frac{b-\mu}{\delta}=\frac{205 \Omega - 200\Omega}{\sqrt{5}}=\frac{5\Omega}{\sqrt{5}}$
+
+   $\Rightarrow P(a'\leq z \leq b')=P(\frac{\mu-c-\mu}{\delta} \leq z \leq \frac{\mu + c- \mu }{\delta})$
+   $=P(-\frac{c}{\delta} \leq z \leq \frac{c}{\delta })=P(-\frac{5}{\sqrt{5}} \leq z \leq \frac{5}{\sqrt{5}})$
+
+   $P(-\frac{5}{\sqrt{5}} \leq z \leq \frac{5}{\sqrt{5}})=\Phi (\frac{5}{\sqrt(5)})-\Phi (-\frac{5}{\sqrt(5)})$
+
+   $=\Phi (\frac{5}{\sqrt(5)})-(1- \Phi (\frac{5}{\sqrt(5)}))$
+
+   $=\Phi (\sqrt{5}) - (1- \Phi (\sqrt{5}))$
+
+   $=\Phi (\sqrt{5}) -1+ \Phi (\sqrt{5})) $
+
+   $=(2*\Phi(\sqrt{5}))-1$
+
+   $=0.975$
+
+   $$P(\text{"Bauteil fehlerhaft"}) = 1 - 0.975 = 0.025$$
+
+b) **Wie  müssen  die  Toleranzgrenzen $(200+/- \alpha) \Omega$ gewählt werden, damit die Wahrscheinlichkeit für  das Auftreten eines fehlerhaften Bauteils, d.h. $P(|R-200| > \alpha)$, kleiner als $0.01$ ist?**
+
+$z$ ist zwischen $\frac{k-\mu}{\sigma}$
+,da $k= \mu \pm \alpha $ fällt $\mu$ raus und es bleibt nur $\frac{\pm\alpha}{\sigma}$:
+
+$P(\frac{-\alpha}{\sigma} \leq z \leq \frac{\alpha}{\sigma}) = 0.99$
+
+$\Phi(\frac{\alpha}{\sigma}) - \Phi(\frac{-\alpha}{\sigma}) = 0.99$
+
+... wieder umstellen ...
+
+$\Phi(\frac{\alpha}{\sigma}) = \frac{1.99}{2}$
+
+$\Phi(\frac{\alpha}{\sigma}) = 0.995$
+
+aus Normalverteilungstabelle
+$\rightarrow \frac{\alpha}{\sigma} = 2.58$
+$\rightarrow \alpha = 5.77$
 
 ---
 ## Aufgabe 6.3
