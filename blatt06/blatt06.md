@@ -1,13 +1,24 @@
 # Übung 6
-## Aufgabe 6.1 (wrsl falsch)
-**Die Länge $X$ (in mm) von Leiterplatten sei angenähert normalverteilt mit Erwartungswert $ \mu = 15$. Ermitteln Sie die Varianz, wenn $98%$ der Leiterplatten zwischen $14 mm$ und $16 mm$ lang sind.**
+## Aufgabe 6.1
+**Die Länge $X$ (in mm) von Leiterplatten sei angenähert normalverteilt mit Erwartungswert $ \mu = 15$. Ermitteln Sie die Varianz, wenn 98% der Leiterplatten zwischen $14 mm$ und $16 mm$ lang sind.**
 
 $z= \frac{k-\mu}{\sigma}$
 
-$\Phi(z) = 0.99 \rightarrow \text{ bei }z=2.33$
+$\Phi(z)- \Phi(-z) = 0.98$
 
+$\Phi(z)- (1-\Phi(z)) = 0.98$
+
+$2*\Phi(z)- 1 = 0.98$
+
+$\Phi(z) = 1.98/2$
+
+$\Phi(z) = 0.99 \rightarrow \text{aus Tabelle bei }z=2.33$
+
+Standardverteilung:
 $\sigma= \frac{k-\mu}{z} = \frac1{2.33} \approx 0.429$
 
+Varianz:
+$\sigma^2= \frac1{2.33}^2 \approx 0.18 mm^2$
 ## Aufgabe 6.2
 
 ## Aufgabe 6.3
