@@ -33,11 +33,36 @@ $$F(n) =e^{-\lambda} \sum_{k=0}^{n} \frac{\lambda^{k}}{k!}$$
 diskrete Werte:
 
 $P_{16}(X > 20) = 1-F(20) = 1 - e^{-16} \sum_{k=0}^{20} \frac{16^{k}}{k!} \approx 0.131832$
-
+hy
 *Formel berechnet mit [Wolfram Alpha (Eingabe mit verlinkt)](http://www.wolframalpha.com/input/?i=1-e%5E%28-16%29+sum%2816%5Ek%2F%28k%21%29%29+k%3D0+to+20)*
 
+---
 ## Aufgabe 6.4
 **Eine Lieferung von 60 USB-Sticks, die 8 fehlerhafte  Sticks enthält, wird einer Qualitätskontrolle unterzogen.  Hierzu werden 5 der  60 Sticks herausgegriffen und überpruft. Die Lieferung wird zurückgeschickt, wenn unter den 5 geprüften Sticks einer fehlerhaft ist. Ermitteln Sie mithilfe der Hypergeometrischen Verteilung, mit welcher  Wahrscheinlichkeit die Lieferung zurückgeschickt wird.**
+ * $N = 60 \text{ (Gesamtzahl)}$
+ * $M = 5 \text{ (Auswahlmenge)}$
+ * $m = 8 \text{ (fehlerhafte Anzahl unter N)}$
+ * $x = 1 \text{ (gewahlte fehlerhafte Anzahl)}$
 
+ *Hypergeometrische Verteilung:*
+ $$P(X=x) = \frac
+ {
+   \begin{pmatrix} M\\x \end{pmatrix} *
+   \begin{pmatrix} N-M\\n-x \end{pmatrix}
+ }{
+     \begin{pmatrix} N\\n \end{pmatrix}
+ }$$
+
+
+ $P(X=1) = \frac
+ {
+   \begin{pmatrix} 5\\1 \end{pmatrix} *
+   \begin{pmatrix} 60-5\\8-1 \end{pmatrix}
+ }{
+     \begin{pmatrix} 60\\8 \end{pmatrix}
+ }$
+ $= 0.397$
+
+---
 ## Aufgabe 6.5
 **Ein Computernetz besteht aus 10 unabhängig voneinander arbeitenden Computern. Jeder dieser 10 Computer fällt in der Zeit T mit der Wahrscheinlichkeit $0.05$ aus. Mit  Hilfe der Ungleichung von Tschebyschewsoll die Wahrscheinlichkeit dafur abgeschätzt werden, dass der absolute Betrag der Differenz zwischen der Zahl der  ausgefallenen Computer und dem Erwartungswert dieser Zufallsvariablen groößer als 2 ist.**
