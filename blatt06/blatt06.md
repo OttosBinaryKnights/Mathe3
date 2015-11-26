@@ -19,8 +19,11 @@ $\sigma= \frac{k-\mu}{z} = \frac1{2.33} \approx 0.429$
 
 Varianz:
 $\sigma^2= \frac1{2.33}^2 \approx 0.18 mm^2$
+
+---
 ## Aufgabe 6.2
 
+---
 ## Aufgabe 6.3
 **In einem großen Netzwerk treten pro Tag im  Durchschnitt 16 Störungen auf. Man kann annehmen, dass die Anzahl der  Störungen *poissonverteilt* ist. Wie groß ist die Wahrscheinlichkeit, dass pro Tag mehr als 20 Störungen auftreten?**
 *Poissonverteilung:*
@@ -29,7 +32,9 @@ $$F(n) =e^{-\lambda} \sum_{k=0}^{n} \frac{\lambda^{k}}{k!}$$
 
 diskrete Werte:
 
-$P_{16}(X >= 20) = 1-F(19) = 1 - e^{-16} \sum_{k=0}^{19} \frac{16^{k}}{k!} \approx 0.188$
+$P_{16}(X > 20) = 1-F(20) = 1 - e^{-16} \sum_{k=0}^{20} \frac{16^{k}}{k!} \approx 0.131832$
+
+*Formel berechnet mit [Wolfram Alpha (Eingabe mit verlinkt)](http://www.wolframalpha.com/input/?i=1-e%5E%28-16%29+sum%2816%5Ek%2F%28k%21%29%29+k%3D0+to+20)*
 
 ## Aufgabe 6.4
 **Eine Lieferung von 60 USB-Sticks, die 8 fehlerhafte  Sticks enthält, wird einer Qualitätskontrolle unterzogen.  Hierzu werden 5 der  60 Sticks herausgegriffen und überpruft. Die Lieferung wird zurückgeschickt, wenn unter den 5 geprüften Sticks einer fehlerhaft ist. Ermitteln Sie mithilfe der Hypergeometrischen Verteilung, mit welcher  Wahrscheinlichkeit die Lieferung zurückgeschickt wird.**
