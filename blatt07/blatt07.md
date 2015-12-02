@@ -1,28 +1,47 @@
 # Übung 7
 ## Aufgabe 7.1
-**Eine Maschine produziert Gehauseteile eines Computers miteinem Ausschussanteil von9%.**
+**Eine Maschine produziert Gehäuseteile eines Computers mit einem Ausschussanteil von 9%.**
 
-(a)  **Nach  welcher  Verteilung  bestimmt  sich  die  Anzahl  der  brauchbarenGehauseteile in einer Anzahlnvon produzierten Gehauseteilen.**
+(a) **Nach welcher Verteilung bestimmt sich die Anzahl der brauchbaren Gehäuseteile in einer Anzahl $n$ von produzierten Gehäuseteilen.**
 
-(b)  **Berechnen Sie mit einer geeigneten Näherung die Wahrscheinlichkeit für 110  oder  mehr  brauchbare  Gehäuseteile  in  einer  Produktion von 1000 Gehäuseteilen.**
-**Begründen Sie: Warum dürfen Sie die Naherung verwenden?**
+(b) **Berechnen Sie mit einer geeigneten Näherung die Wahrscheinlichkeit für 110 oder mehr brauchbare  Gehäuseteile in einer Produktion von 1000 Gehäuseteilen.**
+**Begründen Sie: Warum dürfen Sie die Näherung verwenden?**
 
 ---
-
 ## Aufgabe 7.2
-**Aus  der  Produktion  von  Zylinderschrauben  wird  eine  Stichprobe vom Umfang $n=25$ entnommen und an jeder Schraube die Schaftlangegemessen. Die Stichprobe ergibt $x = 16 mm$ und $s^2= 484\mu^2$. Bestimmen Sie ein Kondenzintervall für $\sima^2$ unter der Voraussetzung, dass das Kondenzniveau $0.99$ beträgt.**
+**Aus  der  Produktion  von  Zylinderschrauben  wird  eine  Stichprobe vom Umfang $n=25$ entnommen und an jeder Schraube die Schaftlänge gemessen. Die Stichprobe ergibt $x = 16 mm$ und $s^2= 484 \mu m^2$. Bestimmen Sie ein Kondenzintervall für $\sigma^2$ unter der Voraussetzung, dass das Kondenzniveau $0.99$ beträgt.**
 
+---
 ## Aufgabe 7.3
-**$X_1,...,X_n$ sei eine unabhängige, identisch verteilte Stichprobe  einer  normalverteilten  Zufallsvariablen $X$,  von der $\mu$ und $\sigma^2$ unbekannt sind. Bestimmen Sie ein Kondenzintervall für $\mu$ zum Vertrauensgrad $1-\alpha = 0.95$ aus den Stichprobenwerten $104; 115; 112; 89; 94; 106; 119; 99; 102 und 90$.**
+**$X_1,...,X_n$ sei eine unabhängige, identisch verteilte Stichprobe  einer  normalverteilten  Zufallsvariablen $X$,  von der $\mu$ und $\sigma^2$ unbekannt sind. Bestimmen Sie ein Kondenzintervall für $\mu$ zum Vertrauensgrad $1-\alpha = 0.95$ aus den Stichprobenwerten 104, 115, 112, 89, 94, 106, 119, 99, 102 und 90.**
 
+---
 ## Aufgabe 7.4
-**Unter3000Lebendgeburten wurden1578Knaben gezahlt. Be-stimmen Sie daraus ein Kondenzintervall fur die Wahrscheinlichkeitpei-ner Knabengeburt zu1= 0:99.**
+**Unter 3000 Lebendgeburten wurden 1578 Knaben gezählt. Bestimmen Sie daraus ein Kondenzintervall fur die Wahrscheinlichkeit $p$ einer Knabengeburt zu $1 - \alpha = 0.99$.**
 
+$n=3000; x=1578$
+
+$\vec{x}=\frac{x}{n} = 1578 / 3000 = 0.526$
+
+$\gamma = 0.99 \rightarrow z = 2.58$
+
+      $$|\frac{x}{n}-P| \leq 3* \frac{\sigma}{n}$$
+
+      $$|0.526 - P| \leq 3* \frac{\sqrt{3000*P*(1-P)}}{3000}$$
+      $$(0.526 - P)^2 \leq 9* \frac{P*(1-P)}{3000}$$
+      $$0.526^2 - 1.052 P + P^2 \leq 9* \frac{P*(1-P)}{3000}$$
+      $$830.028 - 3156 P + 3000 P^2 \leq 9P-9P^2$$
+      $$830.028 - 3165 P + 3009 P^2 \leq 0$$
+
+      $$p_{1} = 0.498614$$
+      $$p_{2} = 0.55323$$
+
+---
 # Aufgabe 7.5
-**Sei  die  Funktionf:D!Rmitf(x)  =  tan(x)an  denStutzstellen(0;f(0));(16;f(16))und(14;f(14))gegeben.**
+**Sei  die  Funktion $f: D\rightarrow R$ mit $f(x)= tan(x)$ an den Stützstellen $(0,f(0)),(\frac16, f(\frac16))$ und $(\frac14, f(\frac14))$ gegeben.**
 
-(a)  **Bestimmen Sie das InterpolationspolynomP2(x) =a0+a1x+a2x2.**
+(a) **Bestimmen Sie das Interpolationspolynom $P_2(x) = a_0+a_1x+a_2x^2$.**
 
-(b)  **Benutzen Sie zur InterpolationQ(x) =b0+b1x+b21x12, d. h. berechnenSie die Konstantenb0;b1undb2vonQ(x).**
+(b) **Benutzen Sie zur Interpolation $Q(x) = b_0 + b_1x + b_2\frac{1}{x-\frac12}$, d. h. berechnen Sie die Konstanten $b_0, b_1$ und $b_2$ von $Q(x)$.**
 
-(c)  **Welche Naherungen ergeben sich aus (a) und (b) furtan(20)?**
+(c)  **Welche Näherungen ergeben sich aus (a) und (b) für $tan(20\deg)$?**
