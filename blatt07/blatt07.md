@@ -4,8 +4,14 @@
 
 (a) **Nach welcher Verteilung bestimmt sich die Anzahl der brauchbaren Gehäuseteile in einer Anzahl $n$ von produzierten Gehäuseteilen.**
 
+Normalverteilung?!
+
 (b) **Berechnen Sie mit einer geeigneten Näherung die Wahrscheinlichkeit für 110 oder mehr brauchbare  Gehäuseteile in einer Produktion von 1000 Gehäuseteilen.**
 **Begründen Sie: Warum dürfen Sie die Näherung verwenden?**
+
+$X:$  brauchbare Gehäuseteile bei Produktion von 1000
+
+$P(X \geq 110)$
 
 ---
 ## Aufgabe 7.2
@@ -15,13 +21,38 @@
 ## Aufgabe 7.3
 **$X_1,...,X_n$ sei eine unabhängige, identisch verteilte Stichprobe  einer  normalverteilten  Zufallsvariablen $X$,  von der $\mu$ und $\sigma^2$ unbekannt sind. Bestimmen Sie ein Kondenzintervall für $\mu$ zum Vertrauensgrad $1-\alpha = 0.95$ aus den Stichprobenwerten 104, 115, 112, 89, 94, 106, 119, 99, 102 und 90.**
 
+gelöst mit Hilfe des Videos: (https://www.youtube.com/watch?v=DdwTa28W4Os)
+
+1. Stichprobe
+
+  104, 115, 112, 89, 94, 106, 119, 99, 102, 90
+2. Punktschätzung
+
+  $\bar{x} = \frac{ 104 + 115 + 112 + 89 + ... + 90}{10} = 103$
+
+3. Schätzung Streuung
+
+  $s^* = \sqrt{\frac{ (104 -103)^2 + (115-103)^2  ... }{10-1} }= \sqrt{106}$
+
+4. Konfidenzniveau
+
+  $\gamma = 0.95 \rightarrow -> z= 1.96$
+
+5. Einsetzen in Formel für Konfidenzintervalle:
+  $$\mu \in [\bar{x} - z* \frac{s^*}{\sqrt{n}};\bar{x} + z* \frac{s^*}{\sqrt{n}}]\text{ zu Konfidenz }\gamma$$
+
+  $103 - 1,96* \frac{\sqrt{106}}{\sqrt{10}} = 96.6187$
+
+  $103 + 1,96* \frac{\sqrt{106}}{\sqrt{10}} = 109.381$
+
+    $\mu \in [96.6187;109.381]\text{ zu Konfidenz }\gamma$
 ---
 ## Aufgabe 7.4
 **Unter 3000 Lebendgeburten wurden 1578 Knaben gezählt. Bestimmen Sie daraus ein Kondenzintervall fur die Wahrscheinlichkeit $p$ einer Knabengeburt zu $1 - \alpha = 0.99$.**
 
 $n=3000; x=1578$
 
-$\vec{x}=\frac{x}{n} = 1578 / 3000 = 0.526$
+$\bar{x}=\frac{x}{n} = 1578 / 3000 = 0.526$
 
 $\gamma = 0.99 \rightarrow z = 2.58$
 
