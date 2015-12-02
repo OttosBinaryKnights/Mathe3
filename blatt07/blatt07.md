@@ -15,7 +15,32 @@ $P(X \geq 110)$
 
 ---
 ## Aufgabe 7.2
-**Aus  der  Produktion  von  Zylinderschrauben  wird  eine  Stichprobe vom Umfang $n=25$ entnommen und an jeder Schraube die Schaftlänge gemessen. Die Stichprobe ergibt $x = 16 mm$ und $s^2= 484 \mu m^2$. Bestimmen Sie ein Kondenzintervall für $\sigma^2$ unter der Voraussetzung, dass das Kondenzniveau $0.99$ beträgt.**
+**Aus  der  Produktion  von  Zylinderschrauben  wird  eine  Stichprobe vom Umfang $n=25$ entnommen und an jeder Schraube die Schaftlänge gemessen. Die Stichprobe ergibt $\bar{x} = 16 mm$ und $s^2= 484 \mu m^2$. Bestimmen Sie ein Kondenzintervall für $\sigma^2$ unter der Voraussetzung, dass das Kondenzniveau $0.99$ beträgt.**
+
+wie 7.3 gelöst.
+
+1. Stichprobe
+
+2. Punktschätzung
+
+  $\bar{x} = 16$
+
+3. Schätzung Streuung
+
+  $s^* = \sqrt{484}$
+
+4. Konfidenzniveau
+
+  $\gamma = 0.99 \rightarrow -> z= 2.58$
+
+5. Einsetzen in Formel für Konfidenzintervalle:
+### FALSCH! Es wurde nach Konfidenzintervall für $\sigma^2$ gefragt
+  $$\mu \in [\bar{x} - z* \frac{s^*}{\sqrt{n}};\bar{x} + z* \frac{s^*}{\sqrt{n}}]\text{ zu Konfidenz }\gamma$$
+
+
+  $\mu \in [4.648;27.352] \text{ zu Konfidenz }\gamma$
+
+
 
 ---
 ## Aufgabe 7.3
