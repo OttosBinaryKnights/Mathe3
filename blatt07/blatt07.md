@@ -92,16 +92,21 @@ gelöst mit Hilfe des Videos: (https://www.youtube.com/watch?v=DdwTa28W4Os)
 
 4. Konfidenzniveau
 
-  $\gamma = 0.95 \rightarrow -> z= 1.96$
+  $\gamma = 0.95 \rightarrow z= 1.96$
+
+  $z_{1-\alpha/2;n-1} = 20.48$
+
+  $z_{\alpha/2;n-1} = 3.247$
 
 5. Einsetzen in Formel für Konfidenzintervalle:
-  $$\mu \in [\bar{x} - z* \frac{s^*}{\sqrt{n}};\bar{x} + z* \frac{s^*}{\sqrt{n}}]\text{ zu Konfidenz }\gamma$$
+  $$\mu \in [\bar{x} - z_{\alpha/2;n-1}* \frac{s^*}{\sqrt{n}};\bar{x} + z_{1-\alpha/2;n-1}* \frac{s^*}{\sqrt{n}}]\text{ zu Konfidenz }\gamma$$
 
-  $103 - 1,96* \frac{\sqrt{106}}{\sqrt{10}} = 96.6187$
+  $103 - 3.247* \frac{\sqrt{106}}{\sqrt{10}} = 92.428 ... $
 
-  $103 + 1,96* \frac{\sqrt{106}}{\sqrt{10}} = 109.381$
+  $103 + 20.48* \frac{\sqrt{106}}{\sqrt{10}} = 169.678 ...$
 
-    $\mu \in [96.6187;109.381]\text{ zu Konfidenz }\gamma$
+    $\mu \in [92.428 ...;169.678 ... ]$
+
 ---
 ## Aufgabe 7.4
 **Unter 3000 Lebendgeburten wurden 1578 Knaben gezählt. Bestimmen Sie daraus ein Kondenzintervall fur die Wahrscheinlichkeit $p$ einer Knabengeburt zu $1 - \alpha = 0.99$.**
