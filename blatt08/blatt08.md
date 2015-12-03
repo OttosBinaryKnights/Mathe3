@@ -1,5 +1,6 @@
 # Übung 8
 ## Aufgabe 8.1
+<<<<<<< HEAD
 **Gegeben sei die Funktion $f:\mathbb{R} \rightarrow \mathbb{R}$ mit $f(x)=x^4-3cos (\frac{\pi}{2}x)-2x+4$ auf dem Intervall [−1,1].**
 
  a) **Zeigen Sie, dass $P_2(x)=1-2x+4x^2$ das quadratische Interpolationspolynom von f an den Stützstellen $x_i=i-1$ mit $i=0,1,2$ ist.**
@@ -18,3 +19,14 @@
  c) **mit dem Neville-Algorithmus.**
 
 ---
+=======
+
+## Aufgabe 8.2
+**Gegeben sei die Funktion $f:R_{\leq -4} \rightarrow R$ mit $f(x) =\sqrt{x+ 4}$ an den Stützstellen $x_0=3; x_1= 0 $ und $x_2=5$. Bestimmen Sie den Wert des Interpolationspolynoms $p(x^*)$ für $x^*= 0.41$**
+
+(a) **nach der Methode von Lagrange**
+
+(b) **nach der Methode von Newton**
+
+(c) **mit dem Neville-Algorithmus.**
+>>>>>>> origin/master
