@@ -119,6 +119,9 @@ $n=3000; x=1578$
 
 $\bar{x}=\frac{x}{n} = 1578 / 3000 = 0.526$
 
+*Binominialverteilt*
+*$\Phi(z)$ verwendebar, weil LaPlace-Bedingung $\sigma = \sqrt{np(1-p)} > 9$ erfüllt*
+
 $\gamma = 0.99 \rightarrow z = 2.58$
 
 $$ [p - z* \sqrt{\frac{p*(1-p)}{n}};p + z* \sqrt{\frac{p*(1-p)}{n}}]\text{ zu Konfidenz }\gamma$$
