@@ -79,6 +79,8 @@ Gelöst nach [Henk-Skript 20.19](https://www.math.uni-magdeburg.de/owncloud/publ
 
 gelöst mit Hilfe des Videos: (https://www.youtube.com/watch?v=DdwTa28W4Os)
 
+$\mu ges. \sigma ungbekannt -> blabla verteilung$
+
 1. Stichprobe
 
   104, 115, 112, 89, 94, 106, 119, 99, 102, 90
@@ -90,22 +92,24 @@ gelöst mit Hilfe des Videos: (https://www.youtube.com/watch?v=DdwTa28W4Os)
 
   $s^* = \sqrt{\frac{ (104 -103)^2 + (115-103)^2  ... }{10-1} }= \sqrt{106}$
 
-4. Konfidenzniveau
+4. Konfidenzniveau(symmetrisch)
 
-  $\gamma = 0.95 \rightarrow z= 1.96$
+  $\gamma = 0.95$
 
-  $z_{1-\alpha/2;n-1} = 20.48$
+  Korrektur nicht normal, nicht chi sondern __Verteilung:
+  $\rightarrow z= 1.96$
 
-  $z_{\alpha/2;n-1} = 3.247$
+  $z_{1-\alpha/2;n-1} = 2.26$
+
 
 5. Einsetzen in Formel für Konfidenzintervalle:
-  $$\mu \in [\bar{x} - z_{\alpha/2;n-1}* \frac{s^*}{\sqrt{n}};\bar{x} + z_{1-\alpha/2;n-1}* \frac{s^*}{\sqrt{n}}]\text{ zu Konfidenz }\gamma$$
+  $$\mu \in [\bar{x} - z_{1-\alpha/2;n-1}* \frac{s^*}{\sqrt{n}};\bar{x} + z_{1-\alpha/2;n-1}* \frac{s^*}{\sqrt{n}}]\text{ zu Konfidenz }\gamma$$
 
-  $103 - 3.247* \frac{\sqrt{106}}{\sqrt{10}} = 92.428 ... $
+  $103 - 2.26* \frac{\sqrt{106}}{\sqrt{10}} = 92.428 ... $
 
-  $103 + 20.48* \frac{\sqrt{106}}{\sqrt{10}} = 169.678 ...$
+  $103 + 2.26* \frac{\sqrt{106}}{\sqrt{10}} = 169.678 ...$
 
-    $\mu \in [92.428 ...;169.678 ... ]$
+    $\mu \in [95.64...;110.385..]$
 
 ---
 ## Aufgabe 7.4
