@@ -33,9 +33,9 @@ $=1$
 **Aus  der  Produktion  von  Zylinderschrauben  wird  eine  Stichprobe vom Umfang $n=25$ entnommen und an jeder Schraube die Schaftlänge gemessen. Die Stichprobe ergibt $\bar{x} = 16 mm$ und $s^2= 484 \mu m^2$. Bestimmen Sie ein Kondenzintervall für $\sigma^2$ unter der Voraussetzung, dass das Kondenzniveau $0.99$ beträgt.**
 
 * $n = 25$
-* $\bar{x} = 16$
+* $\bar{x} = 16 mm$
 * empirische Varianz:
-  $\bar{s}^2 = 484$
+  $\bar{s}^2 = 484 \mu m^2$
 
 Gelöst nach [Henk-Skript 20.19](https://www.math.uni-magdeburg.de/owncloud/public.php?service=files&t=3fd7efaa203e7903d230efac8438d854)
 
@@ -55,15 +55,15 @@ Gelöst nach [Henk-Skript 20.19](https://www.math.uni-magdeburg.de/owncloud/publ
 
   (für $df=24, p=0.995$)
 
-  $\rightarrow X^2_{0.995;24} = 45.56$
+  $\rightarrow z_{0.995;24} = 45.56$
 
   (für $df=24, p=0.005$)
 
-  $\rightarrow X^2_{0.005;24} = 9.89$
+  $\rightarrow z_{0.005;24} = 9.89$
 3. Intervall:
 
-  $$\sigma^2 \in [\frac{(n-1) \bar{s}^2}{X^2_{1-\frac{\alpha}{2}; n-1}};
-  \frac{(n-1) \bar{s}^2}{X^2_{\frac{\alpha}{2}; n-1}}]\text{ zu Konfidenz }\gamma$$
+  $$\sigma^2 \in [\frac{(n-1) \bar{s}^2}{z_{1-\frac{\alpha}{2}; n-1}};
+  \frac{(n-1) \bar{s}^2}{z_{\frac{\alpha}{2}; n-1}}]\text{ zu Konfidenz }\gamma$$
 
   $$\sigma^2 \in [\frac{(25-1) 484}{45.56};
   \frac{(25-1) 484}{9.89}]$$
