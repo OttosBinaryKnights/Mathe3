@@ -17,28 +17,44 @@ $P(X \geq 110)$
 ## Aufgabe 7.2
 **Aus  der  Produktion  von  Zylinderschrauben  wird  eine  Stichprobe vom Umfang $n=25$ entnommen und an jeder Schraube die Schaftlänge gemessen. Die Stichprobe ergibt $\bar{x} = 16 mm$ und $s^2= 484 \mu m^2$. Bestimmen Sie ein Kondenzintervall für $\sigma^2$ unter der Voraussetzung, dass das Kondenzniveau $0.99$ beträgt.**
 
-wie 7.3 gelöst.
+* $n = 25$
+* $\bar{x} = 16$
+* empirische Varianz:
+  $\bar{s}^2 = 484$
 
-1. Stichprobe
+Gelöst nach [Henk-Skript 20.19](https://www.math.uni-magdeburg.de/owncloud/public.php?service=files&t=3fd7efaa203e7903d230efac8438d854)
 
-2. Punktschätzung
-
-  $\bar{x} = 16$
-
-3. Schätzung Streuung
-
-  $s^* = \sqrt{484}$
-
-4. Konfidenzniveau
+1. Konfidenzniveau
 
   $\gamma = 0.99 \rightarrow -> z= 2.58$
 
-5. Einsetzen in Formel für Konfidenzintervalle:
-### FALSCH! Es wurde nach Konfidenzintervall für $\sigma^2$ gefragt
-  $$\mu \in [\bar{x} - z* \frac{s^*}{\sqrt{n}};\bar{x} + z* \frac{s^*}{\sqrt{n}}]\text{ zu Konfidenz }\gamma$$
+2. Bestimme das $1-\alpha/2$ und $\alpha/2$-Quantil   $z_{1-\alpha/2},z_{\alpha/2}$ der $X^2$-Verteilung mit $n-1$ Freiheitsgraden
 
+  $z_{1-\alpha/2} = 1 - \frac{0.01}{2}=0.995$
 
-  $\mu \in [4.648;27.352] \text{ zu Konfidenz }\gamma$
+  $z_{\alpha/2} = \frac{0.01}{2}=0.005$
+
+  *$z_u$ und $z_o$ aus [Tabelle der  Chi-Quadrat-Verteilung](https://de.wikibooks.org/wiki/Statistik:_Tabelle_der_Chi-Quadrat-Verteilung):*
+
+  $df = n-1 = 24$ (degrees of freedom = Freiheitsgrade)
+
+  (für $df=24, p=0.995$)
+
+  $\rightarrow X^2_{0.995;24} = 45.56$
+
+  (für $df=24, p=0.005$)
+
+  $\rightarrow X^2_{0.005;24} = 9.89$
+3. Intervall:
+
+  $$\sigma^2 \in [\frac{(n-1) \bar{s}^2}{X^2_{1-\frac{\alpha}{2}; n-1}};
+  \frac{(n-1) \bar{s}^2}{X^2_{\frac{\alpha}{2}; n-1}}]\text{ zu Konfidenz }\gamma$$
+
+  $$\sigma^2 \in [\frac{(25-1) 484}{45.56};
+  \frac{(25-1) 484}{9.89}]$$
+
+  $$\approx [254.96, 1174.52]$$
+
 
 
 
