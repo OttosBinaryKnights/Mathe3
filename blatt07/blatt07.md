@@ -4,14 +4,29 @@
 
 (a) **Nach welcher Verteilung bestimmt sich die Anzahl der brauchbaren Gehäuseteile in einer Anzahl $n$ von produzierten Gehäuseteilen.**
 
-Normalverteilung?!
+Anzahl brauchbarer Teile bestimmt sich nach Binominialverteilung B(n,P)
+
+* $X$ ~ $B(n, 0.09)$
+* Bernoulli-Exp. (2 mögl. Ergebnisse, p= const.)
 
 (b) **Berechnen Sie mit einer geeigneten Näherung die Wahrscheinlichkeit für 110 oder mehr brauchbare  Gehäuseteile in einer Produktion von 1000 Gehäuseteilen.**
 **Begründen Sie: Warum dürfen Sie die Näherung verwenden?**
 
+* $n= 1000$
+* $p=0.09$
+
+*$\Phi(z)$ verwendebar, weil LaPlace-Bedingung $\sigma = \sqrt{np(1-p)} > 9$ erfüllt mit $\sigma \approx 82$*
+
 $X:$  brauchbare Gehäuseteile bei Produktion von 1000
 
-$P(X \geq 110)$
+
+$P(X \geq 110) = 1 - P(X<=109)$
+$=1- \Phi(\frac{x+\frac12-(n*p)}{\sqrt(n*p*(1-p)))})$
+$=1- \Phi(\frac{109+\frac12-(1000*0.91)}{\sqrt(1000*0.91*0.09)})$
+$=1-\Phi(-88.45)$
+$=1-(1-\Phi(88.45))$
+$=\Phi(88.45)$
+$=1$
 
 ---
 ## Aufgabe 7.2
@@ -109,6 +124,50 @@ $$ [0.50248; 0.54952]\text{ zu Konfidenz }\gamma$$
 
 (a) **Bestimmen Sie das Interpolationspolynom $P_2(x) = a_0+a_1x+a_2x^2$.**
 
+*Ziel: Polynom durch die 3 gegebenen Punkte*
+
+| | $x_0$|$x_2$|$x_1$|
+| :---: | :---: | :---: | :---: |
+|x| $0$ | $\frac16$ | $\frac14$ |
+|y| $0$ | $\frac{\sqrt3}{3}$ | 1 |
+
+
+
+$tan(0) = 0 = a_0$
+
+$tan(\frac14) = 1 = a_0 + a_1 * (x_1-x_0) = a_1 * \frac14$
+
+$\rightarrow a_1 = 4$
+
+$tan(\frac16) = \frac{\sqrt3}{3} = a_0 + a_1 * (x_1-x_0) + a_2 * (x_2-x_0)* (x_2-x_1)$
+$= 0 + 4 * (\frac14) + a_2 * (\frac16)* (-\frac{1}{12})$
+
+$\rightarrow a_2 = $
+
+
+*Newtonsche Interpolationsformel:*
+$P(x) = a_0 + a_1 * (x-x_0) + a_2 * (x-x_0)* (x-x_1) $
+
+
 (b) **Benutzen Sie zur Interpolation $Q(x) = b_0 + b_1x + b_2\frac{1}{x-\frac12}$, d. h. berechnen Sie die Konstanten $b_0, b_1$ und $b_2$ von $Q(x)$.**
 
+$b_0 + b_1x+b_2 \frac{1}{x-0.5} $
+
+$b_0 + b_1*0+b_2 \frac{1}{0-0.5}  = 0$
+
+$b_0 + b_1 \frac16 +b_2 \frac{1}{\frac16-0.5} = \frac{\sqrt3}{3}$
+
+$b_0 + b_1\frac14+b_2 \frac{1}{\frac14-0.5} = 1 $
+
+Über Gauß:
+$$b_0 = 2 * \sqrt{3} - 4$$
+$$ b_1 = 8 \sqrt{3} - 12$$
+$$ b_2 = \sqrt{3} - 2$$
+
 (c)  **Welche Näherungen ergeben sich aus (a) und (b) für $tan(20\deg)$?**
+
+$tan(20\deg) = tan(\frac19 \pi)$
+
+$$P_2(\frac19) = 0.3452$$
+$$Q(\frac19) = 0.3594$$
+$$tan(20\deg) = 0.36$$
