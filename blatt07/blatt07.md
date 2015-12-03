@@ -81,16 +81,11 @@ $\bar{x}=\frac{x}{n} = 1578 / 3000 = 0.526$
 
 $\gamma = 0.99 \rightarrow z = 2.58$
 
-      $$|\frac{x}{n}-P| \leq 3* \frac{\sigma}{n}$$
+$$ [p - z* \sqrt{\frac{p*(1-p)}{n}};p + z* \sqrt{\frac{p*(1-p)}{n}}]\text{ zu Konfidenz }\gamma$$
 
-      $$|0.526 - P| \leq 3* \frac{\sqrt{3000*P*(1-P)}}{3000}$$
-      $$(0.526 - P)^2 \leq 9* \frac{P*(1-P)}{3000}$$
-      $$0.526^2 - 1.052 P + P^2 \leq 9* \frac{P*(1-P)}{3000}$$
-      $$830.028 - 3156 P + 3000 P^2 \leq 9P-9P^2$$
-      $$830.028 - 3165 P + 3009 P^2 \leq 0$$
+$$ [0.526 - 2.58* \sqrt{\frac{0.526*0.474}{3000}}; 0.526 + 2.58* \sqrt{\frac{0.526*0.474}{3000}}]\text{ zu Konfidenz }\gamma$$
 
-      $$p_{1} = 0.498614$$
-      $$p_{2} = 0.55323$$
+$$ [0.50248; 0.54952]\text{ zu Konfidenz }\gamma$$
 
 ---
 # Aufgabe 7.5
