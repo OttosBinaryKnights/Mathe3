@@ -38,7 +38,7 @@ y_i &
 ## Aufgabe 8.4
 **Gegeben sei die Funktion $f:\mathbb{R}_{\leq 6} \rightarrow \mathbb{R}$ mit $f(x)=\sqrt{6-x}$.**
 
- a) **Bestimmen Sie das Interpolationspolynom $P_2(x)$ an den Stützstellen $(3,f(−3)),(5,f(5))$ und $(6,f(6))$.**
+ a) **Bestimmen Sie das Interpolationspolynom $P_2(x)$ an den Stützstellen $(3,f(-3)),(5,f(5))$ und $(6,f(6))$.**
 
  b) **Benutzen Sie das Interpolationspolynom $P_2(x)$, um $\sqrt{2}$ näherungsweise zu berechnen.**
 
