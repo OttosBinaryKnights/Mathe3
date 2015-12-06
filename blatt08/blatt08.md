@@ -4,9 +4,37 @@
 
  a) **Zeigen Sie, dass $P_2(x)=1-2x+4x^2$ das quadratische Interpolationspolynom von f an den Stützstellen $x_i=i-1$ mit $i=0,1,2$ ist.**
 
+ $x_0 = -1$
+
+ $P_2(x_0)=1+2+4 = 7$
+
+ $f(x_0)=1-0+2+4 =7$
+
+---
+
+ $x_1 = 0$
+
+ $P_2(x_1)=1$
+
+ $f(x_1)=-3+4 =1$
+
+ ---
+
+ $x_2 = 1$
+
+ $P_2(x_2) = 1-2+4 = 3$
+
+ $f(x_2) = 1-0-2+4 =3$
+
  b) **Berechnen Sie $f(0.5)$ näherungsweise mithilfe des Interpolationspolynoms $P_2(x)$.**
 
+ $P_2(0.5)=1-1+1 = 1$
+
  c) **Bestimmen Sie fünf Stützstellen $a_i,b_i, 0 \leq i \leq 4$, mit $a_i \in [-1,1]$,so dass $P_2(x)$ das Interpolationspolynom bzgl. diesen Stellen ist.**
+
+ $(a_i,b_i)=3\{(-1,7),(0,1),(1,3)\}$
+
+ Funktionen schneiden sich nur in diesen drei Punkten!
 
 ---
 ## Aufgabe 8.2
