@@ -95,7 +95,7 @@ y_i & j=0 \\
  c) **mit dem Neville-Algorithmus.**
 
  $\begin{matrix}
- P_0(x)=f_0=1$ \\
+ P_0(x)=f_0=1 \\
  P_1(x)=f_1=2 \\
  P_2(x)=f_2=3
  \end{matrix}$
