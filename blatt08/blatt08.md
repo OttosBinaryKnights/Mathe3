@@ -46,15 +46,31 @@
 
  $x_0=-3 \Rightarrow f(x_0)=1$
 
- $x_0=0 \Rightarrow f(x_0)=2$
+ $x_1=0 \Rightarrow f(x_1)=2$
 
- $x_0=5 \Rightarrow f(x_0)=3$
+ $x_2=5 \Rightarrow f(x_2)=3$
 
- $p(x)=\sum_{i=0}^n y_iL_i(x)$
+ $p(x)=\sum_{i=0}^n f(x_i)*L_i(x)$
 
- $L_i(x)= \prod_{\begin{matrix}j=0 \\ j \neq i \end{matrix}}^n \frac{x-x_j}{x_i - x_j}$
+ $L_i(x)= \prod_{\begin{matrix}j=0 \\ j \neq i \end{matrix}}^n \frac{x-x_j}{x_i - x_j}$ *("Gewichtungsfunktion"?)*
 
- $p(x)= 1*(\frac{x+3}{-3*0})* (\frac{x-5}{-3-5})+ 2*(\frac{x+3}{0+3})* (\frac{x-5}{0-5})+3*(\frac{x+3}{5+3})* (\frac{x-0}{5-0})$
+ $p(x)= f(x_0)*(\frac{x-x_1}{x_0-x_1})* (\frac{x-x_2}{x_0-x_2})$
+ $+ f(x_1)* (\frac{x-x_0}{x_1-x_0})* (\frac{x-x_2}{x_1-x_2})$
+ $+ f(x_2)* (\frac{x-x_0}{x_2-x_0})* (\frac{x-x_1}{x_2-x_1})$
+
+ $= f(-3)*(\frac{x-0}{-3-0})* (\frac{x-5}{-3-5})$
+ $+ f(0)* (\frac{x-(-3)}{0-(-3)})* (\frac{x-5}{0-5})$
+ $+ f(5)* (\frac{x-(-3)}{5-(-3)})* (\frac{x-0}{5-0})$
+
+ $= 1*(\frac{x}{-3})* (\frac{x-5}{-8})$
+ $+ 2* (\frac{x+3}{3})* (\frac{x-5}{-5})$
+ $+ 3* (\frac{x+3}{8})* (\frac{x-0}{5})$
+
+ $p(0.41) = ???$
+
+ Lösung von @SalmonSandrock abgetippt:
+
+ $= 1*(\frac{x+3}{-3*0})* (\frac{x-5}{-3-5})+ 2*(\frac{x+3}{0+3})* (\frac{x-5}{0-5})+3*(\frac{x+3}{5+3})* (\frac{x-0}{5-0})$
 
  $p(0.41)=2.113365$
 
@@ -95,20 +111,20 @@ y_i & j=0 \\
  c) **mit dem Neville-Algorithmus.**
 
  $\begin{matrix}
- P_0(x)=f_0=1 \\
- P_1(x)=f_1=2 \\
- P_2(x)=f_2=3
+ P_0(x)=f(-3)=1 \\
+ P_1(x)=f(0)=2 \\
+ P_2(x)=f(5)=3
  \end{matrix}$
 
- $P_{01}(x)=\frac{[x-x_0]P_1(x)-(x-x_1)P_0(x)]}{(x_1-x_0)}$
+ $P_{01}(x)=\frac{(x-x_0)P_1(x)-(x-x_1)P_0(x)}{(x_1-x_0)}$
 
  $=\frac{(x+3)* 2-(x-0)* 1}{0+3}=\frac{2x+6-x}{3}=\frac{x+6}{3}$
 
- $P_{12}(x)=\frac{[x-x_1]P_2(x)-(x-x_2)P_1(x)]}{(x_2-x_1)}$
+ $P_{12}(x)=\frac{(x-x_1)P_2(x)-(x-x_2)P_1(x)}{(x_2-x_1)}$
 
  $=\frac{(x-0)* 3-(x-5)* 2}{5-0}=\frac{3x-2x+10}{5}=\frac{x+10}{5}$
 
- $P_{012}(x)=\frac{[x-x_0]P_12(x)-(x-x_2)P_01(x)]}{(x_2-x_0)}$
+ $P_{012}(x)=\frac{(x-x_0)P_{12}(x)-(x-x_2)P_{01}(x)}{(x_2-x_0)}$
 
  $=\frac{(x+3)* \frac{x+10}{5}-(x-5)* \frac{x+6}{3}}{5+3}=\frac{3x-2x+10}{5}=\frac{x+10}{5}$
 
