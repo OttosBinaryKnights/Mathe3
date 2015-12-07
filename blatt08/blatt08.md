@@ -71,19 +71,18 @@
  $+ 2* (\frac{x+3}{3})* (\frac{x-5}{-5})$
  $+ 3* (\frac{x+3}{8})* (\frac{x-0}{5})$
 
- $p(0.41) = ???$
+$(0.41/-3) * ((0.41-5)/-8) + 2 * $
 
- Lösung von @SalmonSandrock abgetippt:
-
- $= 1*(\frac{x+3}{-3*0})* (\frac{x-5}{-3-5})+ 2*(\frac{x+3}{0+3})* (\frac{x-5}{0-5})+3*(\frac{x+3}{5+3})* (\frac{x-0}{5-0})$
-
- $p(0.41)=2.113365$
+ $p_L(0.41) = 2.264$ (angeblich)
 
  b) **nach der Methode von Newton**
 
-Interpolationspolynom:
- $p(x)=a_0+a_1(x-x_0)+a_2(x-x_0)(x-x_1)$
- $p(x)= \sum_{i=0}^n a_i * \prod_{j=0}^{i-1} (x-x_j)$
+allgemein:
+ $$p(x)= \sum_{i=0}^n a_i * \prod_{j=0}^{i-1} (x-x_j)$$
+
+Interpolationspolynom in diesem Fall:
+ $$p_N(x)=a_0+a_1(x-x_0)+a_2(x-x_0)(x-x_1)$$
+
 
  | $a_0$ | $f(x_0)=1$ | $f(x_1)=2$ | $f(x_2)=3$ |
  | ----- | ---------- | ---------- | ---------- |
@@ -107,11 +106,17 @@ y_i & j=0 \\
 \frac{\alpha_{i,j-1}-\alpha_{i-1,j-1}}{x_i-x_{i-j}} & 1\leq j \leq i
  \end{matrix}$
 
+Lösung:
+nach dem Newton Schema (im Dreieck:)
+
  $\begin{matrix}
  a_0=1 \\
  a_1=\frac13 \\
  a_2=-\frac{1}{60}
  \end{matrix}$
+
+ $P_n(x) = 1+ \frac{1}{3}(x+3)+(-\frac{1}{60})(x+3)x$
+ $= \frac{-x^2}{60}+\frac{3x}{60}+\frac{x}{3}+2$
 
  c) **mit dem Neville-Algorithmus.**
 
@@ -155,11 +160,34 @@ y_i &
 ## Aufgabe 8.4
 **Gegeben sei die Funktion $f:\mathbb{R}_{\leq 6} \rightarrow \mathbb{R}$ mit $f(x)=\sqrt{6-x}$.**
 
- a) **Bestimmen Sie das Interpolationspolynom $P_2(x)$ an den Stützstellen $(3,f(-3)),(5,f(5))$ und $(6,f(6))$.**
+ a) **Bestimmen Sie das Interpolationspolynom $P_2(x)$ an den Stützstellen $(-3,f(-3)),(5,f(5))$ und $(6,f(6))$.**
+
+ Lösung über Newton:
+
+ $\begin{matrix}
+ -3 & 3 \\
+ 5 & 1 & \frac{1-3}{5-(-3)}=-1/4\\
+ 6 & 0
+ \end{matrix}$
+
+ * $a_0 = 7/ 2 $
+ * $a_1 = - 1/ 12 $
+ * $a_2 = - 1/ 12 $
+
+ $P_2(x) = \frac72 - \frac{1}{12}x - \frac{1}{12}x^2$
 
  b) **Benutzen Sie das Interpolationspolynom $P_2(x)$, um $\sqrt{2}$ näherungsweise zu berechnen.**
 
+ $f(4) \approx P(\sqrt{4})$
+ $= \frac{7}{2} - \frac{4}{12} -\frac{16}{12}$
+ $= \frac{11}{6}$
+
  c) **Geben Sie einen Näherungswert für $\int_{-2}^4 f(x)dx$ mithilfe des Interpolationspolynoms $P_2(x)$ an.**
+
+ $\int_{-2}^4 f(x)dx \approx \int_{-2}^4 P_2 (x) dx$
+ $= \int_{-2}^4 (\frac72 - \frac{1}{12}x - \frac{1}{12}x^2)$
+  $= [\frac72 x - \frac{x^2}{24} - \frac{x^3}{36}]_{-2}^4$
+  $= "\frac{37}{2}"$
 
 ---
 ## Aufgabe 8.5
@@ -167,6 +195,15 @@ y_i &
 
  a) **Bestimmen Sie eine Näherung für das bestimmte Integral $I=\int_0^{\frac{\pi}{2}}sin\frac{\pi}{4}x dx$, indem Sie das Interpolationspolynom $P_2(x)$ an den Stützstellen $x_0 = 0,x_1 = 1$ und $x_2 = 2$ der Funktion $f(x)$ benutzen.**
 
+ $\begin{matrix}
+ 0 & 0 \\
+ 1 & \frac{\sqrt{2}}{2} & \frac{1-3}{5-(-3)}=-1/4\\
+ 2 & 1
+ \end{matrix}$
+
  b) **Bestimmen Sie eine weitere Näherung für das Integral I, indem Sie als Näherung für $f(x)$ das Taylorpolynom an der Stelle $x^*= 1$ benutzen.**
 
  c) **Vergleichen Sie die unter a) und b) erhaltenen Näherungswerte mit einem Wert aus dem Taschenrechner.**
+
+ Integral-Taschenrechner:
+ $I=\int_0^{\frac{\pi}{2}}sin\frac{\pi}{4}x dx = 0.8521$
