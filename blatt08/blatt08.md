@@ -26,15 +26,20 @@
 
  $f(x_2) = 1-0-2+4 =3$
 
+(wichtig als Begründung zu schreiben, sonst keine Punkte in Klausur:)
+ Einsetzen reicht, da es nur ein mögliches Interpolationspolynoms für diese drei Stützpunkte geben kann.
+
  b) **Berechnen Sie $f(0.5)$ näherungsweise mithilfe des Interpolationspolynoms $P_2(x)$.**
 
  $P_2(0.5)=1-1+1 = 1$
 
  c) **Bestimmen Sie fünf Stützstellen $a_i,b_i, 0 \leq i \leq 4$, mit $a_i \in [-1,1]$,so dass $P_2(x)$ das Interpolationspolynom bzgl. diesen Stellen ist.**
 
- $(a_i,b_i)=3\{(-1,7),(0,1),(1,3)\}$
+ Punkte sollen nur auf Polynom liegen, eine fehlt noch:
 
- Funktionen schneiden sich nur in diesen drei Punkten!
+ $P_2(-0.5) = 1+1+1=3$
+
+ $\{(-1,7),(-0.5,1),(0,1),(0.5,1),(1,3)\}$
 
 ---
 ## Aufgabe 8.2
