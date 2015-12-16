@@ -20,6 +20,10 @@ c) **Wie hängt das Vorzeichen des Interpolationsfehlers von x ab?**
 **Gegeben sei die Funktion $f : [0, 4] \rightarrow [0, 2]$ mit $f (x) = \sqrt{x}$ an den Stützstellen $x_0 = 0, x_1 = 1, x_2 = 4$.**
 
 a) **Bestimmen Sie das Interpolationspolynom.**
+mit Newton:
+
+$P(x) = 0 + x - \frac{3}{16} x (x-1)$
+$= -\frac{3}{16}x^2+\frac{19}{16}x$
 
 b) **Berechnen Sie die kubischen Splines auf dem Intervall $[x_0,x_1]$ und $[x_1, x_2]$ unter der Bedingung $S_0^{′′}(x_0) = S_1^{′′}(x_2) = 0$.**
 
@@ -47,8 +51,7 @@ b) **Berechnen Sie näherungsweise mithilfe des Interpolationspolynoms das besti
 ## Aufgabe 9.5
 **Gegeben sei die Funktion $f : D \rightarrow[−1, 1]$ mit $f(x) = sin \frac{\pi}{4}x$.**
 
-a) **Bestimmen Sie eine Näherung für das bestimmte Integral $I=\int_{0}^{2}sin \frac{\pi}{4}x dx$
-indem Sie das Interpolationspolynom $P_2(x)$ an den Stützstellen $x_0 = 0,x_1 = 1 ,x_2 = 2$ der Funktion $f(x)$ benutzen.**
+a) **Bestimmen Sie eine Näherung für das bestimmte Integral $I=\int_{0}^{2}sin \frac{\pi}{4}x dx$ indem Sie das Interpolationspolynom $P_2(x)$ an den Stützstellen $x_0 = 0,x_1 = 1 ,x_2 = 2$ der Funktion $f(x)$ benutzen.**
 
 b) **Bestimmen Sie eine weitere Näherung für das Integral I, indem Sie als Näherung für $f(x)$ das Taylorpolynom an der Stelle $x^* = 1$ benutzen.**
 
