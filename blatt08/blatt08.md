@@ -35,7 +35,7 @@
 
  c) **Bestimmen Sie fünf Stützstellen $a_i,b_i, 0 \leq i \leq 4$, mit $a_i \in [-1,1]$,so dass $P_2(x)$ das Interpolationspolynom bzgl. diesen Stellen ist.**
 
- Punkte sollen nur auf Polynom liegen, eine fehlt noch:
+ Punkte sollen nur auf Polynom liegen, vier schon gegeben, eine fehlt noch:
 
  $P_2(-0.5) = 1+1+1=3$
 
@@ -71,7 +71,7 @@
  $+ 2* (\frac{x+3}{3})* (\frac{x-5}{-5})$
  $+ 3* (\frac{x+3}{8})* (\frac{x-0}{5})$
 
-$(0.41/-3) * ((0.41-5)/-8) + 2 * $
+$p_L(0.41) =(0.41/-3) * ((0.41-5)/-8) + 2 * ...$
 
  $p_L(0.41) = 2.264$ (angeblich)
 
@@ -167,12 +167,17 @@ y_i &
  $\begin{matrix}
  -3 & 3 \\
  5 & 1 & \frac{1-3}{5-(-3)}=-1/4\\
- 6 & 0
+ 6 & 0 & \frac{0-1}{6-(-3)}=-1/9 & \frac{-1/9-1/4}{9}=-\frac{13}{81}\\
  \end{matrix}$
+
+ $P(x)= 3 - \frac13 (x+3) - \frac{13}{81} (x+3) x$
+ $=3 - \frac13 x - 1 - \frac{13}{81} x^2 -\frac{13}{27}x$
 
  * $a_0 = 7/ 2 $
  * $a_1 = - 1/ 12 $
  * $a_2 = - 1/ 12 $
+
+irgendwo verrechnet, rauskommen sollte wohl:
 
  $P_2(x) = \frac72 - \frac{1}{12}x - \frac{1}{12}x^2$
 
